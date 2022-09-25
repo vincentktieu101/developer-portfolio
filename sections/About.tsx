@@ -3,7 +3,7 @@ import Image from "next/image";
 import Container from "@mui/material/Container";
 // import ExternalLink from "@components/Link/ExternalLink";
 
-import UCSBBirdEyesView from "@images/main/ucsb-birdseyeview.jpg";
+import UCSBBirdEyesView from "@images/backgrounds/ucsb-birdseyeview.jpg";
 import resumeLink from "@objects/resume-link";
 
 // import { AboutMainSummary, AboutUcsbImage } from "./styles";
