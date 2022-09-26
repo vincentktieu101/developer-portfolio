@@ -1,10 +1,13 @@
 import React from "react";
-import ReactCRAStarterCodeTutorial from "@images/projects/2021/reactcrastartercode-tutorial.png";
-import ReactCRAStarterCodeMobile1 from "@images/projects/2021/reactcrastartercode-mobile1.png";
-import ReactCRAStarterCodeMobile2 from "@images/projects/2021/reactcrastartercode-mobile2.png";
-import ReactCRAStarterCodeMobile3 from "@images/projects/2021/reactcrastartercode-mobile3.png";
 
-const reactCraStarterCode = {
+import ReactCRAStarterCodeProfileImage1 from "@images/projects/2021/react-cra-starter-code-tutorial-desktop.png";
+import ReactCRAStarterCodeProfileImage2 from "@images/projects/2021/react-cra-starter-code-home-mobile.png";
+import ReactCRAStarterCodeProfileImage3 from "@images/projects/2021/react-cra-starter-code-profile-mobile.png";
+import ReactCRAStarterCodeProfileImage4 from "@images/projects/2021/react-cra-starter-code-readme-mobile.png";
+
+import ProjectJson from "../ProjectJson";
+
+const reactCraStarterCode: ProjectJson = {
   title: "ReactGoogleAuthStarter",
   links: {
     Website: "https://react-google-auth-starter.herokuapp.com/",
@@ -13,21 +16,21 @@ const reactCraStarterCode = {
   },
   date: "April 2021",
   images: [
-    ReactCRAStarterCodeTutorial,
-    ReactCRAStarterCodeMobile1,
-    ReactCRAStarterCodeMobile2,
-    ReactCRAStarterCodeMobile3,
+    ReactCRAStarterCodeProfileImage1,
+    ReactCRAStarterCodeProfileImage2,
+    ReactCRAStarterCodeProfileImage3,
+    ReactCRAStarterCodeProfileImage4,
   ],
   description: (
     <React.Fragment>
-      <div>
+      <p>
         In Spring of my junior year at UCSB, I became an tutor for CS148
         (Computer Science Project) in which students learn how to develop an
         application. Since most students wanted to create a React application, I
         wrote some starter code for Google OAuth. I also filmed a mini guide on
         how to use React/Google OAuth on YouTube as well as wrote a Github
         Readme.
-      </div>
+      </p>
     </React.Fragment>
   ),
   iconsList: [

@@ -1,11 +1,12 @@
 import Container from "@mui/material/Container";
+import projects from "@objects/projects";
 
 function Projects() {
   return (
     <div id="projects">
       <Container>
         <h2>Projects</h2>
-        <div>{"...This page is SO broken from the refactor :("}</div>
+        <pre>{JSON.stringify(projects, null, 2)}</pre>
       </Container>
     </div>
   );

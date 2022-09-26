@@ -1,19 +1,23 @@
 import React from "react";
-import ExternalLink from "@components/Link/ExternalLink";
-import TheShoppiesDesktop from "@images/projects/2021/theshoppies-desktop.png";
-import TheShoppiesMobile from "@images/projects/2021/theshoppies-mobile.png";
 
-const theShoppies = {
+import ExternalLink from "@components/Link/ExternalLink";
+
+import TheShoppiesImage1 from "@images/projects/2021/the-shoppies-home-desktop.png";
+import TheShoppiesImage2 from "@images/projects/2021/the-shoppies-home-mobile.png";
+
+import ProjectJson from "../ProjectJson";
+
+const theShoppies: ProjectJson = {
   title: "TheShoppies",
   links: {
     Website: "https://vincentktieu-theshoppies.netlify.app/",
     Github: "https://github.com/vincentktieu101/TheShoppies",
   },
   date: "May 2021",
-  images: [TheShoppiesDesktop, TheShoppiesMobile],
+  images: [TheShoppiesImage1, TheShoppiesImage2],
   description: (
     <React.Fragment>
-      <div>
+      <p>
         Simple app used to enter in Shopify's UX & Web Developer Challenge
         listed{" "}
         <ExternalLink
@@ -28,7 +32,7 @@ const theShoppies = {
         </ExternalLink>{" "}
         so that users can "nominate" them and save their nominations to a
         database.
-      </div>
+      </p>
     </React.Fragment>
   ),
   iconsList: [
