@@ -2,8 +2,8 @@ import React from "react";
 
 import ExternalLink from "@components/Link/ExternalLink";
 
-import SnakeImage1 from "@images/projects/2018/snake-game.png";
-import SnakeImage2 from "@images/projects/2018/snake-guide.png";
+import SnakeImage1 from "@images/projects/2018/snake/game.png";
+import SnakeImage2 from "@images/projects/2018/snake/guide.png";
 
 import ProjectJson from "../ProjectJson";
 

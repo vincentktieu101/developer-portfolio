@@ -1,7 +1,7 @@
 import React from "react";
 
-import MusicMapImage1 from "@images/projects/2021/music-map-home-desktop.png";
-import MusicMapImage2 from "@images/projects/2021/music-map-search-mobile.png";
+import MusicMapImage1 from "@images/projects/2021/music-map/home-desktop.png";
+import MusicMapImage2 from "@images/projects/2021/music-map/search-mobile.png";
 
 import ProjectJson from "../ProjectJson";
 

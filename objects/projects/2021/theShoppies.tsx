@@ -2,8 +2,8 @@ import React from "react";
 
 import ExternalLink from "@components/Link/ExternalLink";
 
-import TheShoppiesImage1 from "@images/projects/2021/the-shoppies-home-desktop.png";
-import TheShoppiesImage2 from "@images/projects/2021/the-shoppies-home-mobile.png";
+import TheShoppiesImage1 from "@images/projects/2021/the-shoppies/home-desktop.png";
+import TheShoppiesImage2 from "@images/projects/2021/the-shoppies/home-mobile.png";
 
 import ProjectJson from "../ProjectJson";
 

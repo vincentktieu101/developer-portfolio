@@ -1,7 +1,7 @@
 import React from "react";
 
-import ChatAppImage1 from "@images/projects/2021/chat-app-home-desktop.png";
-import ChatAppImage2 from "@images/projects/2021/chat-app-home-mobile.png";
+import ChatAppImage1 from "@images/projects/2021/chat-app/home-desktop.png";
+import ChatAppImage2 from "@images/projects/2021/chat-app/home-mobile.png";
 
 import ProjectJson from "../ProjectJson";
 

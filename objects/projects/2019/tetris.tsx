@@ -1,7 +1,7 @@
 import React from "react";
 
-import TetrisImage1 from "@images/projects/2019/tetris.png";
-import TetrisImage2 from "@images/projects/2019/tetris-game-over.png";
+import TetrisImage1 from "@images/projects/2019/tetris/game.png";
+import TetrisImage2 from "@images/projects/2019/tetris/game-over.png";
 
 import ProjectJson from "../ProjectJson";
 

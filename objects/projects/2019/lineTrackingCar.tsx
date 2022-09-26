@@ -1,7 +1,7 @@
 import React from "react";
 
-import LineTrackingCarImage1 from "@images/projects/2019/line-tracking-car-robot.jpeg";
-import LineTrackingCarImage2 from "@images/projects/2019/line-tracking-car-code.png";
+import LineTrackingCarImage1 from "@images/projects/2019/line-tracking-car/robot.jpeg";
+import LineTrackingCarImage2 from "@images/projects/2019/line-tracking-car/code.png";
 
 import ProjectJson from "../ProjectJson";
 

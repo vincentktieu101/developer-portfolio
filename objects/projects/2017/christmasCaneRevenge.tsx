@@ -1,6 +1,6 @@
 import React from "react";
 
-import ChristmasCaneRevengeImage from "@images/projects/2017/christmas-cane-revenge.png";
+import ChristmasCaneRevengeImage from "@images/projects/2017/christmas-cane-revenge/home.png";
 
 import ProjectJson from "../ProjectJson";
 

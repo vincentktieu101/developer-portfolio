@@ -1,9 +1,9 @@
 import React from "react";
 
-import ReactCRAStarterCodeProfileImage1 from "@images/projects/2021/react-cra-starter-code-tutorial-desktop.png";
-import ReactCRAStarterCodeProfileImage2 from "@images/projects/2021/react-cra-starter-code-home-mobile.png";
-import ReactCRAStarterCodeProfileImage3 from "@images/projects/2021/react-cra-starter-code-profile-mobile.png";
-import ReactCRAStarterCodeProfileImage4 from "@images/projects/2021/react-cra-starter-code-readme-mobile.png";
+import ReactCRAStarterCodeProfileImage1 from "@images/projects/2021/react-cra-starter-code/tutorial-desktop.png";
+import ReactCRAStarterCodeProfileImage2 from "@images/projects/2021/react-cra-starter-code/home-mobile.png";
+import ReactCRAStarterCodeProfileImage3 from "@images/projects/2021/react-cra-starter-code/profile-mobile.png";
+import ReactCRAStarterCodeProfileImage4 from "@images/projects/2021/react-cra-starter-code/readme-mobile.png";
 
 import ProjectJson from "../ProjectJson";
 

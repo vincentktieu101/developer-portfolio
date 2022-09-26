@@ -1,8 +1,8 @@
 import React from "react";
 
-import TouchOfElegance1 from "@images/projects/2021/touch-of-elegance-cover-desktop.png";
-import TouchOfElegance2 from "@images/projects/2021/touch-of-elegance-services-mobile.png";
-import TouchOfElegance3 from "@images/projects/2021/touch-of-elegance-contact-mobile.png";
+import TouchOfElegance1 from "@images/projects/2021/touch-of-elegance/cover-desktop.png";
+import TouchOfElegance2 from "@images/projects/2021/touch-of-elegance/services-mobile.png";
+import TouchOfElegance3 from "@images/projects/2021/touch-of-elegance/contact-mobile.png";
 
 import ProjectJson from "../ProjectJson";
 

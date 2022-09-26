@@ -1,9 +1,9 @@
 import React from "react";
 
-import FreeFromClassImage1 from "@images/projects/2020/free-from-class-desktop.png";
-import FreeFromClassImage2 from "@images/projects/2020/free-from-class-edit-event-mobile.png";
-import FreeFromClassImage3 from "@images/projects/2020/free-from-class-group-management-mobile.png";
-import FreeFromClassImage4 from "@images/projects/2020/free-from-class-my-group-mobile.png";
+import FreeFromClassImage1 from "@images/projects/2020/free-from-class/home-desktop.png";
+import FreeFromClassImage2 from "@images/projects/2020/free-from-class/edit-event-mobile.png";
+import FreeFromClassImage3 from "@images/projects/2020/free-from-class/group-management-mobile.png";
+import FreeFromClassImage4 from "@images/projects/2020/free-from-class/my-group-mobile.png";
 
 import ProjectJson from "../ProjectJson";
 
