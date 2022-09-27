@@ -7,8 +7,8 @@ function Footer() {
   return (
     <footer>
       <Container>
-        <div>© {new Date().getFullYear()}, VINCENT'S DEVELOPER PORTFOLIO</div>
-        <div>
+        <p>© {new Date().getFullYear()}, VINCENT'S DEVELOPER PORTFOLIO</p>
+        <p>
           Built with
           {` `}
           <ExternalLink href="https://nextjs.org/">
@@ -22,7 +22,7 @@ function Footer() {
             <b>here</b>
           </ExternalLink>
           .
-        </div>
+        </p>
       </Container>
     </footer>
   );
