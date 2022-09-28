@@ -1,7 +1,5 @@
 import styled, { css } from "styled-components";
 
-const padding = 10;
-
 const StyledHeader = styled.header`
   position: fixed;
   width: 100%;
@@ -20,14 +18,14 @@ const StyledHeader = styled.header`
   
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
   transition: 200ms ease-out;
-  padding: ${padding}px 0;
+  padding: 10px 0;
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 
   ${props => props.navHeight > 0 && css`
-    height: ${props.navHeight + 2 * padding}px;
+    height: ${props.navHeight}px;
   `}
 
   ${props => props.navShrink ? css`

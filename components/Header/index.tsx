@@ -55,6 +55,8 @@ function Header() {
     window.addEventListener("scroll", () => {
       setNavShrink(!!window.scrollY);
     });
+
+    // TOOD: add unmount
   }, []);
 
   useEffect(() => {
