@@ -52,11 +52,11 @@ function Header() {
   const ref = useRef(null);
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    const onScroll = () => {
       setNavShrink(!!window.scrollY);
-    });
-
-    // TOOD: add unmount
+    };
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   useEffect(() => {
