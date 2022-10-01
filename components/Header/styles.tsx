@@ -13,9 +13,14 @@ const StyledHeader = styled.header`
   In this case, we want to remove it from the normal document flow. The
   a tag for hash links are still broken.
 
-  TODO: here is a fix for the hash links: https://css-tricks.com/hash-tag-links-padding/
+  https://css-tricks.com/hash-tag-links-padding/
+
+  Here is a link for url jumps with a header. Unfortunately, I figured out
+  that the heights have to be hardcoded because the useStates aren't able to
+  update the negative margins for the id elements before the jump.
+
+  The header TOTAL height is 30px/80px + 20px padding so 50px/100px.
   */
-  
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
   transition: 200ms ease-out;
   padding: 10px 0;

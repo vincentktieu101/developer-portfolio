@@ -1,8 +1,11 @@
 import React from "react";
 import VincentHeadshot from "@images/main/vincent-headshot.png";
 import Link from "next/link";
+
 import ExternalLink from "@components/Link/ExternalLink";
+
 import resumeLink from "@objects/resume-link";
+
 import {
   CoverBackground,
   CoverHeroImage,

@@ -15,7 +15,7 @@ import {
   BigTitle,
   BigTitleName,
   BigTitleSubName,
-  SmallTitle
+  SmallTitle,
 } from "./styles";
 
 interface SectionJson {
@@ -47,8 +47,8 @@ const sections: SectionJson[] = [
 ];
 
 function Header() {
-  const [navShrink, setNavShrink] = useState(false);
   const [navHeight, setNavHeight] = useState(0);
+  const [navShrink, setNavShrink] = useState(false);
   const ref = useRef(null);
 
   useEffect(() => {

@@ -16,6 +16,7 @@
     "moduleResolution": "node",
     "baseUrl": ".",
     "paths": {
+      "@pages/*": ["pages/*"],
       "@components/*": ["components/*"],
       "@objects/*": ["objects/*"],
       "@images/*": ["images/*"],

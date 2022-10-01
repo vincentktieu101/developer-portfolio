@@ -1,4 +1,8 @@
+import React from "react";
+
 import Container from "@mui/material/Container";
+import Section from "@components/Section";
+
 import experiencesArray, { ExperienceJson } from "@objects/experiences";
 
 function ExperienceItem(props: ExperienceJson) {
@@ -12,7 +16,7 @@ function ExperienceItem(props: ExperienceJson) {
 
 function Experience() {
   return (
-    <div id="experience">
+    <Section id="experience">
       <Container>
         {/* Should use Section Header Tag */}
         <h2>Experience</h2>
@@ -20,7 +24,7 @@ function Experience() {
           <ExperienceItem key={i} {...experienceItem} />
         ))}
       </Container>
-    </div>
+    </Section>
   );
 }
 

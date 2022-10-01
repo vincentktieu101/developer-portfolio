@@ -1,7 +1,11 @@
+import React from "react";
+
 import Link from "next/link";
 import Image from "next/image";
+
 import Container from "@mui/material/Container";
 // import ExternalLink from "@components/Link/ExternalLink";
+import Section from "@components/Section";
 
 import UCSBBirdEyesView from "@images/backgrounds/ucsb-birdseyeview.jpg";
 import resumeLink from "@objects/resume-link";
@@ -39,7 +43,7 @@ const ThirdParagraph = () => (
 
 function About() {
   return (
-    <div id="about">
+    <Section id="about">
       {/* Should be using Section Header Component*/}
       <Container>
         <h2>About Me</h2>
@@ -48,7 +52,7 @@ function About() {
         <ThirdParagraph />
         <Image src={UCSBBirdEyesView} />
       </Container>
-    </div>
+    </Section>
   );
 }
 
