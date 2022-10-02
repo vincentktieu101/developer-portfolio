@@ -3,6 +3,7 @@ import styled, { css } from "styled-components";
 const StyledHeader = styled.header`
   position: fixed;
   width: 100%;
+  z-index: 1;
 
   /* top: 0;
   position: sticky;

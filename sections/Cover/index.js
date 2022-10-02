@@ -1,12 +1,14 @@
 import React from "react";
 import VincentHeadshot from "@images/main/vincent-headshot.png";
 import Link from "next/link";
+import Image from "next/image";
 
 import ExternalLink from "@components/Link/ExternalLink";
 
 import resumeLink from "@objects/resume-link";
 
 import {
+  StyledCover,
   CoverBackground,
   CoverHeroImage,
   CoverText,
@@ -21,9 +23,16 @@ import {
 
 export default function Cover() {
   return (
-    <div id="cover" className="fade-in">
+    <StyledCover>
       <CoverBackground />
-      <CoverHeroImage src={VincentHeadshot} alt="Vincent Tieu" />
+      <CoverHeroImage>
+        <Image 
+          src={VincentHeadshot} 
+          alt="Vincent Tieu" 
+          layout="fill"
+          objectFit="contain"
+        />
+      </CoverHeroImage>
       <CoverBody>
         <CoverText>
           <h2>I'm VINCENT TIEU</h2>
@@ -45,6 +54,6 @@ export default function Cover() {
           </Link>
         </CoverButtons>
       </CoverBody>
-    </div>
+    </StyledCover>
   );
 }

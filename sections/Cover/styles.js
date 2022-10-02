@@ -2,39 +2,25 @@ import styled from "styled-components";
 import Button from "@mui/material/Button";
 import Image from "next/image";
 
+const StyledCover = styled.div`
+  position: relative;
+  height: 90vh;
+`;
+
 const CoverBackground = styled.div`
   position: absolute;
-  z-index: -1;
-  height: 80vh;
-  padding: 10vh;
+  width: 100%;
+  height: 100%;
   background-image: url("/lightbulbs.jpeg");
   opacity: 0.9;
   background-position: left;
   background-size: cover;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
 `;
 
-const CoverHeroImage = styled(Image)`
-  z-index: 0;
-  height: 700px;
-  margin-top: 180px;
-
-  @media (min-width: 800px) {
-    height: 780px;
-    margin-right: 500px;
-    margin-bottom: 60px;
-    margin-top: 0px;
-  }
-
-  @media (min-width: 1100px) {
-    height: 780px;
-    margin-right: 680px;
-    margin-bottom: 60px;
-    margin-top: 0px;
-  }
+const CoverHeroImage = styled.div`
+  /* height: 700px;
+  position: relative;
+  bottom: 0; */
 `;
 
 const CoverBody = styled.div`
@@ -108,6 +94,7 @@ const CoverAnimatedLine = styled.h4`
 `;
 
 export {
+  StyledCover,
   CoverBackground,
   CoverHeroImage,
   CoverBody,
