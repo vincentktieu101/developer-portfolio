@@ -22,6 +22,7 @@ const TypeIcon = styled.div`
   width: 50px;
   height: 50px;
 
+  color: white;
   border-bottom: 1px solid white;
 `;
 

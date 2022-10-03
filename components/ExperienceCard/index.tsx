@@ -20,8 +20,8 @@ function ExperienceCard(props: ExperienceCardProps) {
     <StyledExperienceCard>
       <SideColumn type={type}>
         <TypeIcon>
-          {type === "work" && <WorkIcon style={{color: "white"}} />}
-          {type === "school" && <SchoolIcon style={{color: "white"}} />}
+          {type === "work" && <WorkIcon />}
+          {type === "school" && <SchoolIcon />}
         </TypeIcon>
       </SideColumn>
       <Content>
