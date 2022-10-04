@@ -5,13 +5,14 @@ import { StyledSection } from "./styles";
 interface SectionProps {
   id: string;
   children: ReactNode;
+  centered: boolean;
 };
 
 function Section(props: SectionProps) {
-  const { id, children } = props;
+  const { id, children, centered } = props;
 
   return (
-    <StyledSection id={id}>
+    <StyledSection id={id} centered={centered}>
       {children}
     </StyledSection>
   );

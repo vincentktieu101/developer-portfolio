@@ -8,14 +8,14 @@ import experiencesArray, { ExperienceJson } from "@objects/experiences";
 
 function Experience() {
   return (
-    <Section id="experience">
-      <Container>
+    <Container>
+      <Section id="experience" centered>
         <h2>Experience</h2>
         {experiencesArray.map((experienceItem: ExperienceJson, i) => (
           <ExperienceCard key={i} {...experienceItem} />
         ))}
-      </Container>
-    </Section>
+      </Section>
+    </Container>
   );
 }
 

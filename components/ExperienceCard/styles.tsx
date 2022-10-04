@@ -2,11 +2,12 @@ import styled from "styled-components";
 
 const StyledExperienceCard = styled.div`
   display: flex;
-  margin-bottom: 20px;
-
+  width: 100%;
+  max-width: 900px;
+  overflow: hidden;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
-  overflow: hidden;
+  margin-bottom: 20px;
 `;
 
 const SideColumn = styled.div`
@@ -30,4 +31,12 @@ const Content = styled.div`
   padding: 10px;
 `;
 
-export { StyledExperienceCard, SideColumn, TypeIcon, Content };
+const ContentHeader = styled.h3`
+  font-size: 36px;
+`;
+
+const ContentSubHeader = styled.h4`
+  font-size: 20px;
+`;
+
+export { StyledExperienceCard, SideColumn, TypeIcon, Content, ContentHeader, ContentSubHeader };

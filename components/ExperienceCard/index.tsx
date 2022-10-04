@@ -3,7 +3,7 @@ import React from "react";
 import WorkIcon from '@mui/icons-material/Work';
 import SchoolIcon from '@mui/icons-material/School';
 
-import { StyledExperienceCard, SideColumn, TypeIcon, Content } from "./styles";
+import { StyledExperienceCard, SideColumn, TypeIcon, Content, ContentHeader, ContentSubHeader } from "./styles";
 
 interface ExperienceCardProps {
   type: string;
@@ -25,8 +25,8 @@ function ExperienceCard(props: ExperienceCardProps) {
         </TypeIcon>
       </SideColumn>
       <Content>
-        <h3>{title}</h3>
-        <h4>{company}, {location} ({time})</h4>
+        <ContentHeader>{title}</ContentHeader>
+        <ContentSubHeader>{company}, {location} ({time})</ContentSubHeader>
         <p>{text}</p>
       </Content>
     </StyledExperienceCard>
