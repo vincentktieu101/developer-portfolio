@@ -9,6 +9,7 @@ import Section from "@components/Section";
 
 import UCSBBirdEyesView from "@images/backgrounds/ucsb-birdseyeview.jpg";
 import resumeLink from "@objects/resume-link";
+import SectionHeader from "@components/Section/SectionHeader";
 
 // import { AboutMainSummary, AboutUcsbImage } from "./styles";
 
@@ -43,16 +44,16 @@ const ThirdParagraph = () => (
 
 function About() {
   return (
-    <Section id="about">
-      {/* Should be using Section Header Component*/}
-      <Container>
-        <h2>About Me</h2>
-        <FirstParagraph />
-        <SecondParagraph />
-        <ThirdParagraph />
-        <Image src={UCSBBirdEyesView} />
-      </Container>
-    </Section>
+    <Container>
+      <Section id="about" centered>
+        {/* Should be using Section Header Component*/}
+          <SectionHeader underlined>About Me</SectionHeader>
+          <FirstParagraph />
+          <SecondParagraph />
+          <ThirdParagraph />
+          <Image src={UCSBBirdEyesView} />
+      </Section>
+    </Container>
   );
 }
 

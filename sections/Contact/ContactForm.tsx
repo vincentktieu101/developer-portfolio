@@ -6,6 +6,8 @@ import React, { useState } from "react";
 // import { useSnackbar } from "notistack";
 // import emailjs from "emailjs-com";
 
+import SectionHeader from "@components/Section/SectionHeader";
+
 const Button = ({ children }: any) => <button>{children}</button>;
 const TextField = ({ label }: any) => (
   <>
@@ -71,7 +73,7 @@ export default function ContactForm() {
 
   return (
     <div id="contact-form">
-      <h2 className="text-center">Contact Me</h2>
+      <SectionHeader underlined>Contact Me</SectionHeader>
       <form onSubmit={submitForm}>
         <TextField
           label="Name"

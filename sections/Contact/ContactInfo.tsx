@@ -1,9 +1,11 @@
 import React from "react";
 
+import SectionHeader from "@components/Section/SectionHeader";
+
 function ContactInfo() {
   return (
     <div id="contact-info">
-      <h2>More Info</h2>
+      <SectionHeader underlined>More Info</SectionHeader>
       <div>
         <p>{"<HOUSE>: Rosemead, Los Angeles"}</p>
         <p>{"<PHONE>: (626) 537-5590"}</p>

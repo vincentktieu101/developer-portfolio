@@ -5,7 +5,7 @@ import { StyledSection } from "./styles";
 interface SectionProps {
   id: string;
   children: ReactNode;
-  centered: boolean;
+  centered?: boolean;
 };
 
 function Section(props: SectionProps) {
