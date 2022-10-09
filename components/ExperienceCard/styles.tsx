@@ -7,14 +7,21 @@ const StyledExperienceCard = styled.div`
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   margin-bottom: 20px;
+`;
 
-  :after {
-    display: block;
-    content: " ";
-    height: 10px;
-    width: 100%;
-    background-color: ${(props) =>
-    props.primaryColor ? props.primaryColor : "black"};;
+const BottomAccent = styled.a`
+  display: flex;
+  justify-content: center;
+  color: transparent;
+  font-size: 10px;
+  height: 15px;
+  width: 100%;
+  background-color: ${(props) =>
+  props.primaryColor ? props.primaryColor : "black"};
+  transition: 300ms;
+
+  :hover {
+    color: white;
   }
 `;
 
@@ -66,8 +73,9 @@ const ContentSubHeader = styled.h4`
 `;
 
 export {
-  Flexbox,
   StyledExperienceCard,
+  BottomAccent,
+  Flexbox,
   SideColumn,
   TypeIcon,
   Content,

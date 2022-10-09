@@ -108,12 +108,9 @@ select {
 }
 
 a {
-  color: black;
   text-decoration: none;
 }
 
 a:hover {
-  color: black;
   cursor: pointer;
-  transition: 2s ease-in-out;
 }

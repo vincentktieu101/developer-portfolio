@@ -5,6 +5,7 @@ import SchoolIcon from "@mui/icons-material/School";
 
 import {
   StyledExperienceCard,
+  BottomAccent,
   Flexbox,
   SideColumn,
   TypeIcon,
@@ -35,6 +36,12 @@ function ExperienceCard(props: ExperienceCardProps) {
     time, 
     text 
   } = props;
+
+  const copyToClipBoard = (primaryColor: string) => {
+    navigator.clipboard.writeText(primaryColor);
+    alert(`copied color: ${primaryColor}!`);
+  }
+
   return (
     <StyledExperienceCard primaryColor={primaryColor}>
       <Flexbox>
@@ -52,6 +59,7 @@ function ExperienceCard(props: ExperienceCardProps) {
           {text && <p>{text}</p>}
         </Content>
       </Flexbox>
+      <BottomAccent primaryColor={primaryColor} onClick={() => copyToClipBoard(primaryColor)}>company color: {primaryColor}</BottomAccent>
     </StyledExperienceCard>
   );
 }
