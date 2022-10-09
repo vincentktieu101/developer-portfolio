@@ -18,8 +18,12 @@ const Summary = styled.div`
     max-width: 100%;
   }
 
-   > p + p {
-    margin-top: 10px;
+  > p {
+    line-height: 2;
+  }
+
+  > p + p {
+    margin-top: 20px;
   }
 `;
 
@@ -28,4 +32,8 @@ const StyledUCSBBirdEyesView = styled.img`
   margin-bottom: 10px;
 `;
 
-export { MainContentFlexBox, Summary, StyledUCSBBirdEyesView };
+const B = styled.b`
+  font-weight: 500;
+`;
+
+export { MainContentFlexBox, Summary, StyledUCSBBirdEyesView, B };

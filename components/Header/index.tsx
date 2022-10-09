@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
-import Link from "next/link";
 
+import Link from "next/link";
 import Container from "@mui/material/Container";
 // import IconButton from "@material-ui/core/IconButton";
 // import MenuIcon from "@material-ui/icons/Menu";
@@ -10,12 +10,15 @@ import Container from "@mui/material/Container";
 // import NavLink from "./NavLink";
 import {
   StyledHeader,
+  SectionLink,
   NavItems,
   SectionItems,
   BigTitle,
   BigTitleName,
   BigTitleSubName,
   SmallTitle,
+  SmallTitleName,
+  SmallTitleSubName,
 } from "./styles";
 
 interface SectionJson {
@@ -70,12 +73,15 @@ function Header() {
           <Link href="/">
             <a>
               {navShrink ? (
-                <SmallTitle>VINCENT'S DEVELOPER PORTFOLIO</SmallTitle>
+                <SmallTitle>
+                  <SmallTitleName>Vincent Tieu</SmallTitleName>{" "}
+                  <SmallTitleSubName>| Software Engineer</SmallTitleSubName>
+                </SmallTitle>
               ) : (
                 <>
                   <BigTitle>
-                    <BigTitleName>VINCENT'S</BigTitleName>
-                    <BigTitleSubName>Developer Portfolio</BigTitleSubName>
+                    <BigTitleName>VINCENT TIEU</BigTitleName>
+                    <BigTitleSubName>Software Engineer</BigTitleSubName>
                   </BigTitle>
                 </>
               )}
@@ -84,7 +90,7 @@ function Header() {
           <SectionItems>
             {sections.map(({ NAME, PATH }: SectionJson, i) => (
               <Link key={i} href={`${PATH}`}>
-                <a>{NAME.toUpperCase()}</a>
+                <SectionLink>{NAME}</SectionLink>
               </Link>
             ))}
           </SectionItems>

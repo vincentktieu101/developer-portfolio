@@ -10,12 +10,17 @@ import UCSBBirdEyesView from "@images/backgrounds/ucsb-birdseyeview.jpg";
 import resumeLink from "@objects/resume-link";
 import SectionHeader from "@components/Section/SectionHeader";
 
-import { MainContentFlexBox, Summary, StyledUCSBBirdEyesView } from "./styles";
+import {
+  MainContentFlexBox,
+  Summary,
+  StyledUCSBBirdEyesView,
+  B,
+} from "./styles";
 
 const FirstParagraph = () => (
   <p>
-    Hi! I'm <b>Vincent Tieu</b>, a <b>software engineer</b> and{" "}
-    <b>full-stack web developer</b>, based in <b>Los Angeles</b>! I am
+    Hi! I'm <B>Vincent Tieu,</B> a <B>software engineer</B> and{" "}
+    <B>full-stack web developer,</B> based in <B>Los Angeles!</B> I am
     passionate about programming, whether that means starting a web project from
     scratch (like this online portfolio!) or developing an existing codebase.
   </p>
@@ -23,7 +28,7 @@ const FirstParagraph = () => (
 
 const SecondParagraph = () => (
   <p>
-    I'm a new graduate from <b>UC Santa Barbara</b> in <b>Computer Science</b>!
+    I'm a new graduate from <B>UC Santa Barbara</B> in <B>Computer Science</B>!
     I enjoy programming, from designing and developing frontends, building
     RESTful APIs, and optimizing backend operations. I'm most comfortable in the
     React and NodeJS frameworks.
@@ -41,6 +46,12 @@ const ThirdParagraph = () => (
   </p>
 );
 
+const PhotoCaption = () => (
+  <p>
+    View of My Alma Mater, <B>UC Santa Barbara</B>
+  </p>
+);
+
 function About() {
   return (
     <Section id="about">
@@ -54,7 +65,7 @@ function About() {
           </Summary>
           <div>
             <StyledUCSBBirdEyesView src={UCSBBirdEyesView.src} />
-            <p>View of My Alma Mater, UC Santa Barbara</p>
+            <PhotoCaption />
           </div>
         </MainContentFlexBox>
       </Container>

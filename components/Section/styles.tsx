@@ -8,8 +8,8 @@ const StyledSection = styled.div`
   &::before {
     display: block;
     content: " ";
-    margin-top: -50px;
-    height: 50px;
+    margin-top: -70px;
+    height: 70px;
     width: 100%;
     visibility: hidden;
     pointer-events: none;
@@ -26,6 +26,8 @@ const StyledSectionHeaderText = styled.h2`
   line-height: 1.2;
   font-size: 56px;
   text-transform: uppercase;
+  font-family: Silkscreen;
+  font-weight: 400;
 `;
 
 const Line = styled.hr`

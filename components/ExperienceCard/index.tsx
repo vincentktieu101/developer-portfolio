@@ -36,7 +36,7 @@ function ExperienceCard(props: ExperienceCardProps) {
         <ContentSubHeader>
           {company}, {location} ({time})
         </ContentSubHeader>
-        <p>{text}</p>
+        {text && <p>{text}</p>}
       </Content>
     </StyledExperienceCard>
   );

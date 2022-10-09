@@ -44,6 +44,40 @@ const StyledHeader = styled.header`
       : css`
           background-color: rgba(236, 236, 236, 0.2);
         `}
+
+  a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+  }
+
+  a::before {
+    color: black;
+    transition: 300ms;
+    height: 1px;
+    content: "";
+    position: absolute;
+    background-color: black;
+  }
+
+  a::before {
+    width: 0%;
+    left: 50%;
+    top: 30px;
+  }
+
+  a:hover::before {
+    left: 0%;
+    width: 100%;
+  }
+`;
+
+const SectionLink = styled.a`
+  font-family: Roboto Mono;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: rgba(0, 0, 0, 0.75);
 `;
 
 const NavItems = styled.div`
@@ -61,29 +95,47 @@ const BigTitle = styled.h1`
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: Roboto Mono;
 `;
 
 const BigTitleName = styled.p`
-  font-size: 40px;
-  font-weight: 600;
+  font-family: Silkscreen;
+  font-size: 45px;
   letter-spacing: 1px;
+  font-weight: 700;
 `;
 
 const BigTitleSubName = styled.p`
   font-size: 20px;
   margin-top: -10px;
+  font-weight: 300;
 `;
 
 const SmallTitle = styled.h1`
+  font-family: Roboto Mono;
   font-size: 20px;
+`;
+
+const SmallTitleName = styled.p`
+  font-family: Silkscreen;
+  font-weight: 400;
+  display: inline-block;
+`;
+
+const SmallTitleSubName = styled.p`
+  font-weight: 300;
+  display: inline-block;
 `;
 
 export {
   StyledHeader,
+  SectionLink,
   NavItems,
   SectionItems,
   BigTitle,
   BigTitleName,
   BigTitleSubName,
   SmallTitle,
+  SmallTitleName,
+  SmallTitleSubName,
 };

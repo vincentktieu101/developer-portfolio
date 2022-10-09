@@ -7,14 +7,18 @@ import SectionHeader from "@components/Section/SectionHeader";
 
 import experiencesArray, { ExperienceJson } from "@objects/experiences";
 
+import { Flexbox } from "./styles";
+
 function Experience() {
   return (
     <Section id="experience">
       <Container>
-        <SectionHeader underlined>Experience</SectionHeader>
-        {experiencesArray.map((experienceItem: ExperienceJson, i) => (
-          <ExperienceCard key={i} {...experienceItem} />
-        ))}
+        <Flexbox>
+          <SectionHeader underlined>Experience</SectionHeader>
+          {experiencesArray.map((experienceItem: ExperienceJson, i) => (
+            <ExperienceCard key={i} {...experienceItem} />
+          ))}
+        </Flexbox>
       </Container>
     </Section>
   );

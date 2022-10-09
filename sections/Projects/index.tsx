@@ -6,12 +6,16 @@ import SectionHeader from "@components/Section/SectionHeader";
 
 import projects from "@objects/projects";
 
+import { Flexbox } from "./styles";
+
 function Projects() {
   return (
     <Section id="projects">
       <Container>
-        <SectionHeader underlined>Projects</SectionHeader>
-        <pre>{JSON.stringify(projects, null, 2)}</pre>
+        <Flexbox>
+          <SectionHeader underlined>Projects</SectionHeader>
+          <pre>{JSON.stringify(projects, null, 2)}</pre>
+        </Flexbox>
       </Container>
     </Section>
   );
