@@ -13,11 +13,7 @@ const touchOfElegance: ProjectJson = {
     Github: "https://github.com/vincentktieu101/TouchOfElegance",
   },
   date: "March 2021 - Present",
-  images: [
-    TouchOfElegance1,
-    TouchOfElegance2,
-    TouchOfElegance3,
-  ],
+  images: [TouchOfElegance1, TouchOfElegance2, TouchOfElegance3],
   description: (
     <React.Fragment>
       <p>

@@ -26,9 +26,9 @@ export default function Cover() {
     <StyledCover>
       <CoverBackground />
       <CoverHeroImage>
-        <Image 
-          src={VincentHeadshot} 
-          alt="Vincent Tieu" 
+        <Image
+          src={VincentHeadshot}
+          alt="Vincent Tieu"
           layout="fill"
           objectFit="contain"
         />

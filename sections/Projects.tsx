@@ -8,12 +8,12 @@ import projects from "@objects/projects";
 
 function Projects() {
   return (
+    <Section id="projects">
       <Container>
-    <Section id="projects" centered>
         <SectionHeader underlined>Projects</SectionHeader>
         <pre>{JSON.stringify(projects, null, 2)}</pre>
-    </Section>
       </Container>
+    </Section>
   );
 }
 

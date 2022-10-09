@@ -11,7 +11,8 @@ const StyledExperienceCard = styled.div`
 `;
 
 const SideColumn = styled.div`
-  background-color: ${props => props.type === "school" ? "#f44336" : "#3f51b5"};
+  background-color: ${(props) =>
+    props.type === "school" ? "#f44336" : "#3f51b5"};
   width: 50px;
 `;
 
@@ -39,4 +40,11 @@ const ContentSubHeader = styled.h4`
   font-size: 20px;
 `;
 
-export { StyledExperienceCard, SideColumn, TypeIcon, Content, ContentHeader, ContentSubHeader };
+export {
+  StyledExperienceCard,
+  SideColumn,
+  TypeIcon,
+  Content,
+  ContentHeader,
+  ContentSubHeader,
+};

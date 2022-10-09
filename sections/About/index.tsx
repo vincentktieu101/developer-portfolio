@@ -1,7 +1,6 @@
 import React from "react";
 
 import Link from "next/link";
-import Image from "next/image";
 
 import Container from "@mui/material/Container";
 // import ExternalLink from "@components/Link/ExternalLink";
@@ -11,7 +10,7 @@ import UCSBBirdEyesView from "@images/backgrounds/ucsb-birdseyeview.jpg";
 import resumeLink from "@objects/resume-link";
 import SectionHeader from "@components/Section/SectionHeader";
 
-// import { AboutMainSummary, AboutUcsbImage } from "./styles";
+import { MainContentFlexBox, Summary, StyledUCSBBirdEyesView } from "./styles";
 
 const FirstParagraph = () => (
   <p>
@@ -44,16 +43,22 @@ const ThirdParagraph = () => (
 
 function About() {
   return (
-    <Container>
-      <Section id="about" centered>
-        {/* Should be using Section Header Component*/}
-          <SectionHeader underlined>About Me</SectionHeader>
-          <FirstParagraph />
-          <SecondParagraph />
-          <ThirdParagraph />
-          <Image src={UCSBBirdEyesView} />
-      </Section>
-    </Container>
+    <Section id="about">
+      <Container>
+        <MainContentFlexBox>
+          <Summary>
+            <SectionHeader underlined>About Me</SectionHeader>
+            <FirstParagraph />
+            <SecondParagraph />
+            <ThirdParagraph />
+          </Summary>
+          <div>
+            <StyledUCSBBirdEyesView src={UCSBBirdEyesView.src} />
+            <p>View of My Alma Mater, UC Santa Barbara</p>
+          </div>
+        </MainContentFlexBox>
+      </Container>
+    </Section>
   );
 }
 

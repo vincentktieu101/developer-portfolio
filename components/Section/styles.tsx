@@ -1,24 +1,25 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 const StyledSection = styled.div`
   margin-bottom: 15vh;
 
-  ${props => props.centered && css`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  `}
-
   width: 100%;
 
   &::before {
-    display: block; 
-    content: " "; 
-    margin-top: -50px; 
+    display: block;
+    content: " ";
+    margin-top: -50px;
     height: 50px;
-    visibility: hidden; 
+    width: 100%;
+    visibility: hidden;
     pointer-events: none;
   }
+`;
+
+const StyledSectionHeader = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const StyledSectionHeaderText = styled.h2`
@@ -33,4 +34,4 @@ const Line = styled.hr`
   max-width: 100%;
 `;
 
-export { StyledSection, StyledSectionHeaderText, Line };
+export { StyledSectionHeader, StyledSection, StyledSectionHeaderText, Line };

@@ -1,10 +1,10 @@
 import React from "react";
 
 type StaticImageData = {
-  src: string
-  height: number
-  width: number
-  blurDataURL?: string
+  src: string;
+  height: number;
+  width: number;
+  blurDataURL?: string;
 };
 
 interface ProjectJson {

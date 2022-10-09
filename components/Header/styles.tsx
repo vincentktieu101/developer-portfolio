@@ -30,15 +30,20 @@ const StyledHeader = styled.header`
   flex-direction: row;
   justify-content: space-between;
 
-  ${props => props.navHeight > 0 && css`
-    height: ${props.navHeight}px;
-  `}
+  ${(props) =>
+    props.navHeight > 0 &&
+    css`
+      height: ${props.navHeight}px;
+    `}
 
-  ${props => props.navShrink ? css`
-    background-color: rgba(236, 236, 236, 1);
-  ` : css`
-    background-color: rgba(236, 236, 236, 0.2);
-  `}
+  ${(props) =>
+    props.navShrink
+      ? css`
+          background-color: rgba(236, 236, 236, 1);
+        `
+      : css`
+          background-color: rgba(236, 236, 236, 0.2);
+        `}
 `;
 
 const NavItems = styled.div`
@@ -73,7 +78,7 @@ const SmallTitle = styled.h1`
   font-size: 20px;
 `;
 
-export { 
+export {
   StyledHeader,
   NavItems,
   SectionItems,

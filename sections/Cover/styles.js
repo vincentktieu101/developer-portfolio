@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import Button from "@mui/material/Button";
-import Image from "next/image";
 
 const StyledCover = styled.div`
   position: relative;
   height: 90vh;
+  margin-bottom: 15vh;
 `;
 
 const CoverBackground = styled.div`

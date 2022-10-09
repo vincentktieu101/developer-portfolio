@@ -9,14 +9,14 @@ import experiencesArray, { ExperienceJson } from "@objects/experiences";
 
 function Experience() {
   return (
-    <Container>
-      <Section id="experience" centered>
+    <Section id="experience">
+      <Container>
         <SectionHeader underlined>Experience</SectionHeader>
         {experiencesArray.map((experienceItem: ExperienceJson, i) => (
           <ExperienceCard key={i} {...experienceItem} />
         ))}
-      </Section>
-    </Container>
+      </Container>
+    </Section>
   );
 }
 

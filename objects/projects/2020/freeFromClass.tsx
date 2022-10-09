@@ -26,14 +26,15 @@ const freeFromClass: ProjectJson = {
         FreeFromClass was a class project for CS48. This was my introduction
         into web development where I worked in a team of 4 to develop an app
         from scratch to deployment. Through this app, I learned everything from
-        Agile, React, NextJS, Authentication, MongoDB NoSQL, unit and e2e testing,
-        and Heroku app deployment. All in all, I learned a TON from this project!
+        Agile, React, NextJS, Authentication, MongoDB NoSQL, unit and e2e
+        testing, and Heroku app deployment. All in all, I learned a TON from
+        this project!
       </p>
       <p>
-        FreeFromClass was meant to be a tool for students to find good times to meet
-        with others. Students could input their schedule then create multiple groups in
-        order to find good times to meet in each group. When2Meet is a similar app minus
-        the ability to reuse schedules.
+        FreeFromClass was meant to be a tool for students to find good times to
+        meet with others. Students could input their schedule then create
+        multiple groups in order to find good times to meet in each group.
+        When2Meet is a similar app minus the ability to reuse schedules.
       </p>
     </React.Fragment>
   ),

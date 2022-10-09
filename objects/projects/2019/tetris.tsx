@@ -14,12 +14,12 @@ const tetris: ProjectJson = {
   images: [TetrisImage1, TetrisImage2],
   description: (
     <p>
-      Super fun project that taught me a lot about OOP, algorithms, and UI development. 
-      There's also a difficulty setting that makes the game harder as the game goes on!
+      Super fun project that taught me a lot about OOP, algorithms, and UI
+      development. There's also a difficulty setting that makes the game harder
+      as the game goes on!
     </p>
   ),
   iconsList: ["Pygame", "Python"],
-}
-
+};
 
 export default tetris;

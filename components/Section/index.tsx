@@ -6,7 +6,7 @@ interface SectionProps {
   id: string;
   children: ReactNode;
   centered?: boolean;
-};
+}
 
 function Section(props: SectionProps) {
   const { id, children, centered } = props;

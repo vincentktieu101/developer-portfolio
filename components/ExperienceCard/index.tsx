@@ -1,9 +1,16 @@
 import React from "react";
 
-import WorkIcon from '@mui/icons-material/Work';
-import SchoolIcon from '@mui/icons-material/School';
+import WorkIcon from "@mui/icons-material/Work";
+import SchoolIcon from "@mui/icons-material/School";
 
-import { StyledExperienceCard, SideColumn, TypeIcon, Content, ContentHeader, ContentSubHeader } from "./styles";
+import {
+  StyledExperienceCard,
+  SideColumn,
+  TypeIcon,
+  Content,
+  ContentHeader,
+  ContentSubHeader,
+} from "./styles";
 
 interface ExperienceCardProps {
   type: string;
@@ -26,7 +33,9 @@ function ExperienceCard(props: ExperienceCardProps) {
       </SideColumn>
       <Content>
         <ContentHeader>{title}</ContentHeader>
-        <ContentSubHeader>{company}, {location} ({time})</ContentSubHeader>
+        <ContentSubHeader>
+          {company}, {location} ({time})
+        </ContentSubHeader>
         <p>{text}</p>
       </Content>
     </StyledExperienceCard>

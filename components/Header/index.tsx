@@ -8,7 +8,7 @@ import Container from "@mui/material/Container";
 // import DrawerContent from "../DrawerContent";
 
 // import NavLink from "./NavLink";
-import { 
+import {
   StyledHeader,
   NavItems,
   SectionItems,
@@ -43,7 +43,7 @@ const sections: SectionJson[] = [
   {
     NAME: "contact",
     PATH: "/#contact",
-  }
+  },
 ];
 
 function Header() {
