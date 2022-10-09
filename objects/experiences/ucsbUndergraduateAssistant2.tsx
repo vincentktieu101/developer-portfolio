@@ -2,6 +2,8 @@ const UcsbUndergraduateLearningAssistant2 = {
   type: "work",
   title: "Undergraduate Teaching Assistant",
   company: "UCSB",
+  primaryColor: "#00539b",
+  secondaryColor: "#ffc323",
   location: "Santa Barbara CA",
   time: "September 2021 - December 2021",
   text: `Worked as an undergraduate teaching assistant for CS148,

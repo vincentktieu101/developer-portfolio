@@ -15,6 +15,8 @@ interface ExperienceJson {
   location: string;
   time: string;
   text: string;
+  primaryColor?: string;
+  secondaryColor?: string;
 }
 
 const experienceArray: ExperienceJson[] = [

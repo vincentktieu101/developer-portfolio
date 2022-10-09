@@ -1,6 +1,8 @@
 const PrivateMathTutor = {
   type: "work",
   title: "Private Math Tutor",
+  primaryColor: "black",
+  secondaryColor: "white",
   company: "Freelance",
   location: "Los Angeles CA",
   time: "February - June 2018",
