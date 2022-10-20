@@ -7,7 +7,7 @@ const StyledSection = styled.div`
 
   &::before {
     display: block;
-    content: " ";
+    content: "";
     margin-top: -70px;
     height: 70px;
     width: 100%;

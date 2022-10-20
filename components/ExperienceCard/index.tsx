@@ -18,8 +18,8 @@ interface ExperienceCardProps {
   type: string;
   title: string;
   company: string;
-  primaryColor: string;
-  secondaryColor: string;
+  primaryColor?: string;
+  secondaryColor?: string;
   location: string;
   time: string;
   text: string;

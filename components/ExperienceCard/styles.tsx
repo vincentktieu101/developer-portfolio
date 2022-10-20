@@ -41,6 +41,7 @@ const TypeIcon = styled.div`
 
   width: 60px;
   height: 60px;
+  border-radius: 0 0 8px;
 
   color: ${(props) =>
     props.secondaryColor ? props.secondaryColor : "black"};
