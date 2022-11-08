@@ -17,7 +17,9 @@ function Projects() {
       <Container>
         <Flexbox>
           <SectionHeader underlined>Projects</SectionHeader>
-          {projects.map((project: ProjectJson, i: number) => <ProjectCard key={i} {...project} />)}
+          {projects.map((project: ProjectJson, i: number) => (
+            <ProjectCard key={i} {...project} />
+          ))}
         </Flexbox>
       </Container>
     </Section>

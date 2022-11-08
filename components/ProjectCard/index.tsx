@@ -4,17 +4,17 @@ import ExternalLink from "@components/Link/ExternalLink";
 
 import ProjectJson from "@objects/projects/ProjectJson";
 
-import { StyledProjectCard, Images, ProjectImage, Links, Technology, Description } from "./styles";
+import {
+  StyledProjectCard,
+  Images,
+  ProjectImage,
+  Links,
+  Technology,
+  Description,
+} from "./styles";
 
 function ProjectCard(props: ProjectJson) {
-  const {
-    title,
-    links,
-    date,
-    images,
-    description,
-    iconsList,
-  } = props;
+  const { title, links, date, images, description, iconsList } = props;
 
   return (
     <StyledProjectCard>
@@ -22,17 +22,21 @@ function ProjectCard(props: ProjectJson) {
         <h2>{title}</h2>
         <div>{date}</div>
         <Links>
-          {Object.keys(links).map((link: string, i: number) => 
+          {Object.keys(links).map((link: string, i: number) => (
             <ExternalLink href={links[link]} key={i}>
               {link}
             </ExternalLink>
-          )}
+          ))}
         </Links>
         <Images>
-          {images.map((image: any, i: number) => <ProjectImage key={i} src={image.src} />)}
+          {images.map((image: any, i: number) => (
+            <ProjectImage key={i} src={image.src} />
+          ))}
         </Images>
         <Technology>
-          {iconsList.map((icon: string, i: number) => <span key={i}>{icon}.{" "}</span>)}
+          {iconsList.map((icon: string, i: number) => (
+            <span key={i}>{icon}. </span>
+          ))}
         </Technology>
         <Description>{description}</Description>
       </div>

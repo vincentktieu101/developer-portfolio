@@ -17,7 +17,7 @@ const BottomAccent = styled.a`
   height: 15px;
   width: 100%;
   background-color: ${(props) =>
-  props.primaryColor ? props.primaryColor : "black"};
+    props.primaryColor ? props.primaryColor : "black"};
   transition: 300ms;
 
   :hover {
@@ -43,8 +43,7 @@ const TypeIcon = styled.div`
   height: 60px;
   border-radius: 0 0 8px;
 
-  color: ${(props) =>
-    props.secondaryColor ? props.secondaryColor : "black"};
+  color: ${(props) => (props.secondaryColor ? props.secondaryColor : "black")};
   background-color: ${(props) =>
     props.primaryColor ? props.primaryColor : "black"};
   border-bottom: white;

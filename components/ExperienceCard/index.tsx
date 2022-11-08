@@ -26,21 +26,21 @@ interface ExperienceCardProps {
 }
 
 function ExperienceCard(props: ExperienceCardProps) {
-  const { 
-    type, 
-    title, 
-    company, 
-    primaryColor, 
-    secondaryColor, 
-    location, 
-    time, 
-    text 
+  const {
+    type,
+    title,
+    company,
+    primaryColor,
+    secondaryColor,
+    location,
+    time,
+    text,
   } = props;
 
   const copyToClipBoard = (primaryColor: string) => {
     navigator.clipboard.writeText(primaryColor);
     alert(`copied color: ${primaryColor}!`);
-  }
+  };
 
   return (
     <StyledExperienceCard primaryColor={primaryColor}>
@@ -59,7 +59,12 @@ function ExperienceCard(props: ExperienceCardProps) {
           {text && <p>{text}</p>}
         </Content>
       </Flexbox>
-      <BottomAccent primaryColor={primaryColor} onClick={() => copyToClipBoard(primaryColor)}>company color: {primaryColor}</BottomAccent>
+      <BottomAccent
+        primaryColor={primaryColor}
+        onClick={() => copyToClipBoard(primaryColor)}
+      >
+        company color: {primaryColor}
+      </BottomAccent>
     </StyledExperienceCard>
   );
 }

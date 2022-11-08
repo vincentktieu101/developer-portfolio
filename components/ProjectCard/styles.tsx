@@ -36,7 +36,7 @@ const Images = styled.div`
 `;
 
 const Technology = styled.div`
-  margin-bottom: 20px;  
+  margin-bottom: 20px;
 `;
 
 const Description = styled.div`
@@ -48,4 +48,11 @@ const Description = styled.div`
   }
 `;
 
-export { StyledProjectCard, ProjectImage, Links, Images, Technology, Description };
+export {
+  StyledProjectCard,
+  ProjectImage,
+  Links,
+  Images,
+  Technology,
+  Description,
+};
