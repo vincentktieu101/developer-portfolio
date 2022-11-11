@@ -5,8 +5,8 @@ import ExternalLink from "./Link/ExternalLink";
 
 function Footer() {
   return (
-    <footer>
-      <Container>
+    <footer style={{backgroundColor: "black", color: "white", paddingTop: "10px", paddingBottom: "50px"}}>
+      <Container style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
         <p>© {new Date().getFullYear()}, VINCENT'S DEVELOPER PORTFOLIO</p>
         <p>
           Built with
