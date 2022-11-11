@@ -5,14 +5,14 @@ import Section from "@components/Section";
 import { StyledContacts } from "./styles";
 
 import ContactInfo from "./ContactInfo";
-import ContactForm from "./ContactForm";
+// import ContactForm from "./ContactForm";
 
 function Contacts() {
   return (
     <Section id="contact">
       <Container>
         <StyledContacts>
-          <ContactForm />
+          {/* <ContactForm /> */}
           <ContactInfo />
         </StyledContacts>
       </Container>
