@@ -1,3 +1,6 @@
+// Now depreciated!!!!
+// TODO: add hover styles for links
+
 import styled, { css } from "styled-components";
 
 const StyledHeader = styled.header`
@@ -33,7 +36,7 @@ const StyledHeader = styled.header`
   ${(props) =>
     props.navHeight > 0 &&
     css`
-      height: ${props.navHeight}px;
+      height: ${props.navHeight + 20}px;
     `}
 
   ${(props) =>
@@ -43,9 +46,7 @@ const StyledHeader = styled.header`
         `
       : css`
           background-color: rgba(236, 236, 236, 0.2);
-        `}
-
-  a {
+        `} /* a {
     color: black;
     text-decoration: none;
     display: inline-block;
@@ -70,7 +71,7 @@ const StyledHeader = styled.header`
   a:hover::before {
     left: 0%;
     width: 100%;
-  }
+  } */
 `;
 
 const SectionLink = styled.a`

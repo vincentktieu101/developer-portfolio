@@ -6,7 +6,18 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        expandDrawer: "expandDrawer 300ms ease-in",
+        closeDrawer: "closeWidth 300ms ease-in",
+      },
+      keyframes: {
+        expandDrawer: {
+          "0%": { width: "0" },
+          "100%": { width: "60%" },
+        },
+      }
+    },
   },
   plugins: [],
 };

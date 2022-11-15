@@ -1,25 +1,14 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 
 import Link from "next/link";
 import Container from "@mui/material/Container";
 // import IconButton from "@material-ui/core/IconButton";
-// import MenuIcon from "@material-ui/icons/Menu";
+import MenuIcon from "@mui/icons-material/Menu";
 // import Drawer from "@material-ui/core/Drawer";
 // import DrawerContent from "../DrawerContent";
 
 // import NavLink from "./NavLink";
-import {
-  StyledHeader,
-  SectionLink,
-  NavItems,
-  SectionItems,
-  BigTitle,
-  BigTitleName,
-  BigTitleSubName,
-  SmallTitle,
-  SmallTitleName,
-  SmallTitleSubName,
-} from "./styles";
+import Drawer from "components/Drawer";
 
 interface SectionJson {
   NAME: string;
@@ -50,9 +39,8 @@ const sections: SectionJson[] = [
 ];
 
 function Header() {
-  const [navHeight, setNavHeight] = useState(0);
   const [navShrink, setNavShrink] = useState(false);
-  const ref = useRef(null);
+  const [showDrawer, setShowDrawer] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
@@ -62,41 +50,50 @@ function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  useEffect(() => {
-    setNavHeight(ref.current.clientHeight);
-  }, [navShrink]);
-
   return (
-    <StyledHeader navShrink={navShrink} navHeight={navHeight}>
-      <Container>
-        <NavItems ref={ref}>
-          <Link href="/">
-            <a>
-              {navShrink ? (
-                <SmallTitle>
-                  <SmallTitleName>Vincent Tieu</SmallTitleName>{" "}
-                  <SmallTitleSubName>| Software Engineer</SmallTitleSubName>
-                </SmallTitle>
-              ) : (
-                <>
-                  <BigTitle>
-                    <BigTitleName>VINCENT TIEU</BigTitleName>
-                    <BigTitleSubName>Software Engineer</BigTitleSubName>
-                  </BigTitle>
-                </>
-              )}
-            </a>
-          </Link>
-          <SectionItems>
-            {sections.map(({ NAME, PATH }: SectionJson, i) => (
-              <Link key={i} href={`${PATH}`}>
-                <SectionLink>{NAME}</SectionLink>
-              </Link>
-            ))}
-          </SectionItems>
-        </NavItems>
-      </Container>
-    </StyledHeader>
+    <>
+      <header
+        className={`fixed w-full z-[1] flex flex-row justify-between shadow-md text-black p-[10px] ${
+          navShrink ? "bg-white" : "bg-white/[0.2]"
+        } transition ease-out duration-200`}
+      >
+        <Container>
+          <div className="flex justify-between">
+            <Link href="/">
+              <a>
+                {navShrink ? (
+                  <h1 className="flex text-[20px] gap-[10px]">
+                    <p className="font-['SilkScreen']">Vincent Tieu</p>
+                    <p>|</p>
+                    <p className="font-['Roboto Mono']">Software Engineer</p>
+                  </h1>
+                ) : (
+                  <>
+                    <h1 className="flex flex-col items-center">
+                      <p className="font-['SilkScreen'] text-[45px] font-[700]">Vincent Tieu</p>
+                      <p className="font-['Roboto Mono'] text-[20px] font-[300] mt-[-10px]">Software Engineer</p>
+                    </h1>
+                  </>
+                )}
+              </a>
+            </Link>
+  
+            <div className="hidden lg:flex items-center gap-[20px]">
+              {sections.map(({ NAME, PATH }: SectionJson, i) => (
+                <Link key={i} href={`${PATH}`}>
+                  <a className="font-['Roboto Mono'] text-[18px] capitalize text-black/[0.75]">{NAME}</a>
+                </Link>
+              ))}
+            </div>
+  
+            <div className="lg:hidden flex items-center">
+              <button onClick={() => setShowDrawer(true)}><MenuIcon className="text-[32px]" /></button>
+            </div>
+          </div>
+        </Container>
+      </header>
+      {showDrawer && <Drawer setOpen={setShowDrawer} />}
+    </>
   );
 }
 
