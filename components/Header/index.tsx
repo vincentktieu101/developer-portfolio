@@ -70,24 +70,32 @@ function Header() {
                 ) : (
                   <>
                     <h1 className="flex flex-col items-center">
-                      <p className="font-['SilkScreen'] text-[45px] font-[700]">Vincent Tieu</p>
-                      <p className="font-['Roboto Mono'] text-[20px] font-[300] mt-[-10px]">Software Engineer</p>
+                      <p className="font-['SilkScreen'] text-[45px] font-[700]">
+                        Vincent Tieu
+                      </p>
+                      <p className="font-['Roboto Mono'] text-[20px] font-[300] mt-[-10px]">
+                        Software Engineer
+                      </p>
                     </h1>
                   </>
                 )}
               </a>
             </Link>
-  
+
             <div className="hidden lg:flex items-center gap-[20px]">
               {sections.map(({ NAME, PATH }: SectionJson, i) => (
                 <Link key={i} href={`${PATH}`}>
-                  <a className="font-['Roboto Mono'] text-[18px] capitalize text-black/[0.75]">{NAME}</a>
+                  <a className="font-['Roboto Mono'] text-[18px] capitalize text-black/[0.75]">
+                    {NAME}
+                  </a>
                 </Link>
               ))}
             </div>
-  
+
             <div className="lg:hidden flex items-center">
-              <button onClick={() => setShowDrawer(true)}><MenuIcon className="text-[32px]" /></button>
+              <button onClick={() => setShowDrawer(true)}>
+                <MenuIcon className="text-[32px]" />
+              </button>
             </div>
           </div>
         </Container>
