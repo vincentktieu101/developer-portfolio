@@ -66,10 +66,12 @@ const Content = styled.div`
 const ContentHeader = styled.h3`
   font-size: 36px;
   line-height: 1.2;
+  font-weight: bold;
 `;
 
 const ContentSubHeader = styled.h4`
   font-size: 20px;
+  font-weight: bold;
 `;
 
 export {

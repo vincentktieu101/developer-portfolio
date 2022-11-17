@@ -19,8 +19,8 @@ function ProjectCard(props: ProjectJson) {
   return (
     <StyledProjectCard>
       <div>
-        <h2>{title}</h2>
-        <div>{date}</div>
+        <h2 style={{fontSize: "36px", fontWeight: "bold"}}>{title}</h2>
+        <p>{date}</p>
         <Links>
           {Object.keys(links).map((link: string, i: number) => (
             <ExternalLink href={links[link]} key={i}>
