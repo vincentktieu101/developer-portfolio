@@ -10,7 +10,7 @@ const UcsbUndergraduateLearningAssistant = {
 Computer Science Project, where students build an app while learn about Agile, 
 testing, and software reliability. This quarter I helped mentor 2 teams
 that used React, NoSQL, Flask / Express, Git, and Heroku for their apps.
-The teams I mentored placed as the top 2 favorites at the end of the year 
+Both teams I mentored placed won awards at the end of the year 
 presentations!`,
 };
 
