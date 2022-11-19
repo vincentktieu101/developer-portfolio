@@ -10,7 +10,7 @@ function ProjectCard({
   date,
   images,
   description,
-  iconsList
+  iconsList,
 }: ProjectJson) {
   return (
     <div className="flex w-100 mb-[20px] before:content-[''] before:h-[250px] before:w-[5px] before:mr-[20px] before:bg-black">
@@ -26,7 +26,11 @@ function ProjectCard({
         </div>
         <div className="flex gap-[20px] mb-[10px] flex-col items-start md:flex-row">
           {images.map((image: any, i: number) => (
-            <img className="max-h-[400px] hidden first:flex md:flex" key={i} src={image.src} />
+            <img
+              className="max-h-[400px] hidden first:flex md:flex"
+              key={i}
+              src={image.src}
+            />
           ))}
         </div>
         <div className="mb-[20px]">
@@ -34,7 +38,9 @@ function ProjectCard({
             <span key={i}>{icon}. </span>
           ))}
         </div>
-        <div className="max-w-[800px] leading-2 flex flex-col gap-[20px]">{description}</div>
+        <div className="max-w-[800px] leading-2 flex flex-col gap-[20px]">
+          {description}
+        </div>
       </div>
     </div>
   );

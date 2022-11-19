@@ -34,7 +34,10 @@ function ExperienceCard({
     <div className="w-full max-w-[900px] overflow-hidden mb-[20px] border-[1px] rounded-md border-gray-100 shadow-md">
       <div className="flex">
         <div className="bg-color-white w-[80px]">
-          <div className="flex justify-center items-center w-[60px] h-[60px] rounded-md" style={{backgroundColor: primaryColor, color: secondaryColor}}>
+          <div
+            className="flex justify-center items-center w-[60px] h-[60px] rounded-md"
+            style={{ backgroundColor: primaryColor, color: secondaryColor }}
+          >
             {type === "work" && <WorkIcon fontSize="large" />}
             {type === "school" && <SchoolIcon fontSize="large" />}
           </div>
@@ -47,7 +50,9 @@ function ExperienceCard({
           {text && <p className="leading-2 mt-[20px]">{text}</p>}
         </div>
       </div>
-      <div className="flex justify-center text-[10px] h-[15px] w-full bg-[${primaryColor}] text-transparent hover:text-white" style={{backgroundColor: primaryColor}}
+      <div
+        className="flex justify-center text-[10px] h-[15px] w-full bg-[${primaryColor}] text-transparent hover:text-white"
+        style={{ backgroundColor: primaryColor }}
         onClick={() => copyToClipBoard(primaryColor)}
       >
         company color: {primaryColor}
