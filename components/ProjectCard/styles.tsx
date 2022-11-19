@@ -15,7 +15,7 @@ const StyledProjectCard = styled.div`
 `;
 
 const ProjectImage = styled.img`
-  max-height: 300px;
+  max-height: 400px;
 `;
 
 const Links = styled.div`
@@ -32,6 +32,7 @@ const Images = styled.div`
 
   @media (max-width: 1000px) {
     flex-direction: column;
+    align-items: flex-start;
   }
 `;
 
