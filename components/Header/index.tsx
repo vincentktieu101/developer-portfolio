@@ -2,41 +2,10 @@ import React, { useEffect, useState } from "react";
 
 import Link from "next/link";
 import Container from "@mui/material/Container";
-// import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
-// import Drawer from "@material-ui/core/Drawer";
-// import DrawerContent from "../DrawerContent";
-
-// import NavLink from "./NavLink";
 import Drawer from "components/Drawer";
 
-interface SectionJson {
-  NAME: string;
-  PATH: string;
-}
-
-const sections: SectionJson[] = [
-  {
-    NAME: "home",
-    PATH: "/",
-  },
-  {
-    NAME: "about",
-    PATH: "/#about",
-  },
-  {
-    NAME: "experience",
-    PATH: "/#experience",
-  },
-  {
-    NAME: "projects",
-    PATH: "/#projects",
-  },
-  {
-    NAME: "contact",
-    PATH: "/#contact",
-  },
-];
+import sections from "@objects/sections";
 
 function Header() {
   const [navShrink, setNavShrink] = useState(false);
@@ -83,10 +52,10 @@ function Header() {
             </Link>
 
             <div className="hidden lg:flex items-center gap-[20px]">
-              {sections.map(({ NAME, PATH }: SectionJson, i) => (
-                <Link key={i} href={`${PATH}`}>
+              {sections.map(({ name, path }, i) => (
+                <Link key={i} href={path}>
                   <a className="font-['Roboto Mono'] text-[18px] capitalize text-black/[0.75]">
-                    {NAME}
+                    {name}
                   </a>
                 </Link>
               ))}
