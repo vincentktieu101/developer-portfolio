@@ -4,43 +4,39 @@ import ExternalLink from "@components/Link/ExternalLink";
 
 import ProjectJson from "@objects/projects/ProjectJson";
 
-import {
-  StyledProjectCard,
-  Images,
-  ProjectImage,
-  Links,
-  Technology,
-  Description,
-} from "./styles";
-
-function ProjectCard(props: ProjectJson) {
-  const { title, links, date, images, description, iconsList } = props;
-
+function ProjectCard({
+  title,
+  links,
+  date,
+  images,
+  description,
+  iconsList
+}: ProjectJson) {
   return (
-    <StyledProjectCard>
+    <div className="flex w-100 mb-[20px] before:content-[''] before:h-[250px] before:w-[5px] before:mr-[20px] before:bg-black">
       <div>
-        <h2 style={{ fontSize: "36px", fontWeight: "bold" }}>{title}</h2>
+        <h2 className="text-[36px] font-bold">{title}</h2>
         <p>{date}</p>
-        <Links>
+        <div className="flex gap-[10px] mb-[10px]">
           {Object.keys(links).map((link: string, i: number) => (
             <ExternalLink href={links[link]} key={i}>
               {link}
             </ExternalLink>
           ))}
-        </Links>
-        <Images>
+        </div>
+        <div className="flex gap-[20px] mb-[10px] flex-col items-start md:flex-row">
           {images.map((image: any, i: number) => (
-            <ProjectImage key={i} src={image.src} />
+            <img className="max-h-[400px] hidden first:flex md:flex" key={i} src={image.src} />
           ))}
-        </Images>
-        <Technology>
+        </div>
+        <div className="mb-[20px]">
           {iconsList.map((icon: string, i: number) => (
             <span key={i}>{icon}. </span>
           ))}
-        </Technology>
-        <Description>{description}</Description>
+        </div>
+        <div className="max-w-[800px] leading-2 flex flex-col gap-[20px]">{description}</div>
       </div>
-    </StyledProjectCard>
+    </div>
   );
 }
 
