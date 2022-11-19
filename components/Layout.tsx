@@ -16,4 +16,3 @@ function Layout(props) {
 }
 
 export default Layout;
-// export { ModalContext };

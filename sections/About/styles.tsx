@@ -1,3 +1,4 @@
+// TODO: refactor styled-components to tailwind
 import styled from "styled-components";
 
 // should try using grid

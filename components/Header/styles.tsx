@@ -1,3 +1,5 @@
+// TODO: refactor styled-components to tailwind
+
 // Now depreciated!!!!
 // TODO: add hover styles for links
 
