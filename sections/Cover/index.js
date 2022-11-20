@@ -1,15 +1,13 @@
 import React from "react";
+
 import VincentHeadshot from "@images/main/vincent-headshot.png";
 import Link from "next/link";
 import Image from "next/image";
-
 import ExternalLink from "@components/Link/ExternalLink";
 
 import resumeLink from "@objects/resume-link";
 
 import {
-  StyledCover,
-  CoverBackground,
   CoverHeroImage,
   CoverText,
   CoverBody,
@@ -19,21 +17,18 @@ import {
   CoverAnimatedLine,
 } from "./styles";
 
-// TODO: I hate this entire file even though it's not THAT bad....
-
 export default function Cover() {
   return (
-    <StyledCover>
-      <CoverBackground />
-      <CoverHeroImage>
-        <Image
-          src={VincentHeadshot}
+    <div className="relative h-[90vh] mb-[15vh]">
+      <img className="absolute w-full h-full bg-[url('/lightbulbs.jpeg')] opacity-[0.9] bg-left bg-cover z-[-1]" />
+      <div className="flex justify-center w-full">
+        <img
+          className="absolute bottom-0 max-h-[700px]"
+          src={VincentHeadshot.src}
           alt="Vincent Tieu"
-          layout="fill"
-          objectFit="contain"
         />
-      </CoverHeroImage>
-      <CoverBody>
+      </div>
+      {/* <CoverBody>
         <CoverText>
           <h2>I'm VINCENT TIEU</h2>
           <CoverAnimatedTitle>
@@ -53,7 +48,7 @@ export default function Cover() {
             </CoverButton>
           </Link>
         </CoverButtons>
-      </CoverBody>
-    </StyledCover>
+      </CoverBody> */}
+    </div>
   );
 }
