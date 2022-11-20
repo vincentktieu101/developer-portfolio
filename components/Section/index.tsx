@@ -1,20 +1,20 @@
 import React, { ReactNode } from "react";
 
-import { StyledSection } from "./styles";
-
 interface SectionProps {
   id: string;
   children: ReactNode;
   centered?: boolean;
 }
 
-function Section(props: SectionProps) {
-  const { id, children, centered } = props;
-
+function Section({
+  id,
+  children,
+  centered
+}: SectionProps) {
   return (
-    <StyledSection id={id} centered={centered}>
+    <div className="mb-[15vh] w-full before:content-[''] before:block before:mt-[-70px] before:h-[70px] before:w-full before:visible pointer-events-none" id={id}>
       {children}
-    </StyledSection>
+    </div>
   );
 }
 
