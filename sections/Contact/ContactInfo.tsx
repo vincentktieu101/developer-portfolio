@@ -3,7 +3,7 @@ import React from "react";
 import HomeIcon from "@mui/icons-material/Home";
 import PhoneIcon from "@mui/icons-material/Phone";
 import MailIcon from "@mui/icons-material/Mail";
-import GithubIcon from "@mui/icons-material/Github";
+// import GithubIcon from "@mui/icons-material/Github";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import PostAddIcon from "@mui/icons-material/PostAdd";
 
