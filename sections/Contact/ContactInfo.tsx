@@ -3,7 +3,7 @@ import React from "react";
 import HomeIcon from "@mui/icons-material/Home";
 import PhoneIcon from "@mui/icons-material/Phone";
 import MailIcon from "@mui/icons-material/Mail";
-// import GithubIcon from "@mui/icons-material/Github";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import PostAddIcon from "@mui/icons-material/PostAdd";
 
@@ -46,7 +46,7 @@ function ContactInfo() {
             href="https://github.com/vincentktieu101"
             className="flex items-center mb-[10px] text-black"
           >
-            {/* <GithubIcon fontSize="large" className="mr-[10px]" /> */}
+            <GitHubIcon fontSize="large" className="mr-[10px]" />
             https://github.com/vincentktieu101
           </ExternalLink>
           <ExternalLink
