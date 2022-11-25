@@ -10,11 +10,11 @@ import ContactMailIcon from "@mui/icons-material/ContactMail";
 import sections from "@objects/sections";
 
 const icons: JSX.Element[] = [
-  <HomeIcon />,
-  <MenuBookIcon />,
-  <WorkIcon />,
-  <CodeIcon />,
-  <ContactMailIcon />,
+  <HomeIcon key={0} />,
+  <MenuBookIcon key={1} />,
+  <WorkIcon key={2} />,
+  <CodeIcon key={3} />,
+  <ContactMailIcon key={4} />,
 ];
 
 interface DrawerProps {
@@ -41,7 +41,7 @@ function Drawer({ setOpen }: DrawerProps) {
     return () => {
       window.removeEventListener("click", handleClick);
     };
-  }, []);
+  }, [setOpen]);
 
   return (
     <>
@@ -53,14 +53,12 @@ function Drawer({ setOpen }: DrawerProps) {
         {sections.map(({ name, path }, i) => {
           const Icon = icons[i];
           return (
-            <div className="w-full">
-              <Link key={i} href={`${path}`}>
-                <a className="font-['Roboto Mono'] text-[18px] capitalize text-black/[0.75] font-bold flex gap-[5px] mb-[10px]">
-                  {Icon}
-                  <p>{name.toUpperCase()}</p>
-                </a>
-              </Link>
-            </div>
+            <Link key={i} href={`${path}`}>
+              <a className="font-['Roboto Mono'] text-[18px] capitalize text-black/[0.75] font-bold flex gap-[5px] mb-[10px]">
+                {Icon}
+                <p>{name.toUpperCase()}</p>
+              </a>
+            </Link>
           );
         })}
       </div>

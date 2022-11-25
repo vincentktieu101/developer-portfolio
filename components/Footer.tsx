@@ -7,7 +7,7 @@ function Footer() {
   return (
     <footer className="bg-black text-white pt-[10px] pb-[50px]">
       <Container className="flex flex-col items-center">
-        <p>© {new Date().getFullYear()}, VINCENT'S DEVELOPER PORTFOLIO</p>
+        <p>© {new Date().getFullYear()}, VINCENT&apos;S DEVELOPER PORTFOLIO</p>
         <p>
           Built with
           {` `}

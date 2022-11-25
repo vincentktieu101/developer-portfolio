@@ -3,14 +3,7 @@ import userInteface from "./userInteface";
 import backendDevelopment from "./backendDevelopment";
 import productDevelopment from "./productDevelopment";
 
-interface skill {
-  title: string;
-  background: number;
-  icon: string;
-  text: string;
-}
-
-const skills: skill[] = [
+const skills = [
   frontendDevelopment,
   userInteface,
   backendDevelopment,
