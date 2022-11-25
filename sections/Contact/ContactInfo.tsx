@@ -46,7 +46,7 @@ function ContactInfo() {
             href="https://github.com/vincentktieu101"
             className="flex items-center mb-[10px] text-black"
           >
-            <GithubIcon fontSize="large" className="mr-[10px]" />
+            {/* <GithubIcon fontSize="large" className="mr-[10px]" /> */}
             https://github.com/vincentktieu101
           </ExternalLink>
           <ExternalLink
