@@ -40,7 +40,7 @@ function ExperienceCard({
 
   return (
     <div
-      className="w-full max-w-[900px] overflow-hidden mb-[20px] border-[1px] rounded-md border-gray-100 shadow-md"
+      className="w-full max-w-[900px] mb-[20px] border-[1px] rounded-md border-gray-100 shadow-md"
       onMouseEnter={() => setIsMouseHover(true)}
       onMouseLeave={() => setIsMouseHover(false)}
     >
@@ -70,7 +70,7 @@ function ExperienceCard({
         </div>
       </div>
       <div
-        className="flex justify-center text-[10px] h-[15px] w-full"
+        className="flex justify-center text-[10px] h-[15px] hover:cursor-pointer "
         style={{ backgroundColor: primaryColor }}
         onClick={(e) => {
           e.stopPropagation();

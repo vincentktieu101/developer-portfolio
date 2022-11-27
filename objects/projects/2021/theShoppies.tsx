@@ -8,7 +8,7 @@ import TheShoppiesImage2 from "@images/projects/2021/the-shoppies/home-mobile.pn
 import ProjectJson from "../ProjectJson";
 
 const theShoppies: ProjectJson = {
-  title: "Movie Nominator (TheShoppies)",
+  title: "TheShoppies",
   links: {
     Website: "https://vincentktieu-theshoppies.netlify.app/",
     Github: "https://github.com/vincentktieu101/TheShoppies",

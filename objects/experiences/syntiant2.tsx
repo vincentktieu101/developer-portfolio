@@ -3,7 +3,6 @@ const Syntiant2 = {
   title: "Full-Stack Software Engineer",
   company: "Syntiant",
   primaryColor: "#162c44",
-  secondaryColor: "white",
   link: "https://www.syntiant.com/",
   location: "Irvine CA",
   time: "January 2022 - July 2022",

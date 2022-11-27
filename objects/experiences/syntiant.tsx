@@ -3,7 +3,6 @@ const Syntiant = {
   title: "Full-Stack Software Engineer Intern",
   company: "Syntiant",
   primaryColor: "#162c44",
-  secondaryColor: "white",
   link: "https://www.syntiant.com/",
   location: "Irvine CA",
   time: "June 2021 - December 2021",

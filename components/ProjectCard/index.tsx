@@ -16,7 +16,7 @@ function ProjectCard({
   iconsList,
 }: ProjectJson) {
   return (
-    <div className="flex w-100 mb-[20px] before:content-[''] before:h-[250px] before:w-[5px] before:mr-[20px] before:bg-black">
+    <div className="flex mb-[20px] before:content-[''] before:h-[250px] before:w-[5px] before:mr-[20px] before:bg-black">
       <div>
         <h2 className="text-[36px] font-bold">{title}</h2>
         <p className="flex items-center gap-[10px]">
@@ -41,7 +41,7 @@ function ProjectCard({
             </div>
           ))}
         </div>
-        <div className="flex items-center gap-[10px] mb-[20px]">
+        <div className="flex flex-wrap items-center gap-x-[10px] mb-[20px]">
           <SourceIcon fontSize="small" />
           {iconsList.map((icon: string, i: number) => (
             <>
