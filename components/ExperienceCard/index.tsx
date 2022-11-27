@@ -45,20 +45,18 @@ function ExperienceCard({
       onMouseLeave={() => setIsMouseHover(false)}
     >
       <div className="flex">
-        <div className="relative w-[80px]">
-          <div className="absolute">
-            <div
-              className={`flex justify-center items-center w-[60px] h-[60px] rounded-br-md ${
-                link ? "hover:cursor-pointer" : ""
-              }`}
-              style={{ backgroundColor: primaryColor, color: secondaryColor }}
-              onClick={() => {
-                if (!link) return;
-                window.open(link, "_bank");
-              }}
-            >
-              <Icon fontSize="large" />
-            </div>
+        <div className="w-[80px]">
+          <div
+            className={`flex justify-center items-center w-[60px] h-[60px] rounded-br-md ${
+              link ? "hover:cursor-pointer" : ""
+            }`}
+            style={{ backgroundColor: primaryColor, color: secondaryColor }}
+            onClick={() => {
+              if (!link) return;
+              window.open(link, "_bank");
+            }}
+          >
+            <Icon fontSize="large" />
           </div>
         </div>
         <div className="w-full p-[20px]">
