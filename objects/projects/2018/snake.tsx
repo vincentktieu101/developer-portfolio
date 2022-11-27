@@ -28,7 +28,7 @@ const snake: ProjectJson = {
       </p>
       <p>
         I wrote this app in Python and Pygame. I also wrote a mini programming
-        guide that you can check out {" "}
+        guide that you can check out{" "}
         <ExternalLink href="https://docs.google.com/document/d/1OEufgKplRawOo76_liC3QqEdKu9eFTG4x-0CQsaFhbw/edit?usp=sharing">
           here
         </ExternalLink>

@@ -40,7 +40,7 @@ function ExperienceCard({
 
   return (
     <div
-      className="w-full max-w-[900px] mb-[20px] border-[1px] rounded-md border-gray-100 shadow-md"
+      className="w-full overflow-hidden border-[1px] max-w-[900px] mb-[20px] rounded-md border-gray-100 shadow-md "
       onMouseEnter={() => setIsMouseHover(true)}
       onMouseLeave={() => setIsMouseHover(false)}
     >
