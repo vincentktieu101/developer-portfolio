@@ -23,7 +23,7 @@ function ProjectCard({
           <EventIcon fontSize="small" />
           {date}
         </p>
-        <p className="flex items-center mb-[10px] gap-[10px]">
+        <p className="flex flex-wrap items-center mb-[10px] gap-[10px]">
           <LaunchIcon fontSize="small" />
           {Object.keys(links).map((link: string, i: number) => (
             <>
