@@ -70,7 +70,7 @@ function ExperienceCard({
         </div>
       </div>
       <div
-        className="flex justify-center text-[10px] h-[15px] hover:cursor-pointer "
+        className="flex justify-center text-[10px] h-[15px] hover:cursor-pointer"
         style={{ backgroundColor: primaryColor }}
         onClick={(e) => {
           e.stopPropagation();
