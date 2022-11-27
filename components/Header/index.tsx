@@ -22,9 +22,9 @@ function Header() {
   return (
     <>
       <header
-        className={`fixed w-full z-[1] flex flex-row justify-between shadow-md text-black p-[10px] ${
+        className={`fixed w-full z-[1] flex flex-row justify-between shadow-md text-black p-[10px] transition ease-out duration-200 ${
           navShrink ? "bg-white" : "bg-white/[0.2]"
-        } transition ease-out duration-200`}
+        }`}
       >
         <Container>
           <div className="flex justify-between">

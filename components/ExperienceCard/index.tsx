@@ -27,11 +27,6 @@ function ExperienceCard({
 }) {
   const [isMouseHover, setIsMouseHover] = useState(false);
 
-  const copyToClipBoard = (primaryColor: string) => {
-    navigator.clipboard.writeText(primaryColor);
-    alert(`copied color: ${primaryColor}!`);
-  };
-
   let Icon;
   if (isMouseHover && link) {
     Icon = LaunchIcon;
@@ -79,7 +74,8 @@ function ExperienceCard({
         style={{ backgroundColor: primaryColor }}
         onClick={(e) => {
           e.stopPropagation();
-          copyToClipBoard(primaryColor);
+          navigator.clipboard.writeText(primaryColor);
+          alert(`copied color: ${primaryColor}!`);
         }}
       >
         <p

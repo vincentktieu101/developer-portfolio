@@ -48,7 +48,7 @@ function Drawer({ setOpen }: DrawerProps) {
       <div className="fixed bg-black/[0.4] w-[100vw] h-[100vh] z-[1]" />
       <div
         ref={ref}
-        className={`fixed right-0 top-0 w-[60%] max-w-[250px] h-[100vh] bg-white z-[1] p-[20px]`}
+        className="fixed right-0 top-0 w-[60%] max-w-[250px] h-[100vh] bg-white z-[1] p-[20px]"
       >
         {sections.map(({ name, path }, i) => {
           const Icon = icons[i];
