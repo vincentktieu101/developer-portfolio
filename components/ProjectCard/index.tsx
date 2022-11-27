@@ -27,12 +27,7 @@ function ProjectCard({
         <div className="flex gap-[20px] mb-[10px] flex-col items-start md:flex-row">
           {images.map((image: any, i: number) => (
             <div key={i} className="hidden first:flex md:flex">
-              <img
-                className="max-h-[400px]"
-                key={i}
-                alt=""
-                src={image.src}
-              />
+              <img className="max-h-[400px]" key={i} alt="" src={image.src} />
             </div>
           ))}
         </div>
@@ -40,7 +35,7 @@ function ProjectCard({
           {iconsList.map((icon: string, i: number) => (
             <span key={i}>
               {icon}
-              {i != (iconsList.length - 1) && " | "}
+              {i != iconsList.length - 1 && " | "}
             </span>
           ))}
         </div>

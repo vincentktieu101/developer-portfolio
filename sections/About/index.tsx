@@ -10,19 +10,21 @@ import resumeLink from "@objects/resume-link";
 
 const FirstParagraph = () => (
   <p className="leading-2 mb-[20px]">
-    Hi! I'm <b className="font-bold">Vincent Tieu,</b> a <b className="font-bold">software engineer</b> and{" "}
-    <b className="font-bold">full-stack web developer,</b> based in <b className="font-bold">Los Angeles!</b> I am
-    passionate about programming, whether that means starting a web project from
-    scratch (like this online portfolio!) or developing an existing codebase.
+    Hi! I'm <b className="font-bold">Vincent Tieu,</b> a{" "}
+    <b className="font-bold">software engineer</b> and{" "}
+    <b className="font-bold">full-stack web developer,</b> based in{" "}
+    <b className="font-bold">Los Angeles!</b> I am passionate about programming,
+    whether that means starting a web project from scratch (like this online
+    portfolio!) or developing an existing codebase.
   </p>
 );
 
 const SecondParagraph = () => (
   <p className="leading-2 mb-[20px]">
-    I'm a new graduate from <b className="font-bold">UC Santa Barbara</b> in <b className="font-bold">Computer Science</b>!
-    I enjoy programming, from designing and developing frontends, building
-    RESTful APIs, and optimizing backend operations. I'm most comfortable in the
-    React and NodeJS frameworks.
+    I'm a new graduate from <b className="font-bold">UC Santa Barbara</b> in{" "}
+    <b className="font-bold">Computer Science</b>! I enjoy programming, from
+    designing and developing frontends, building RESTful APIs, and optimizing
+    backend operations. I'm most comfortable in the React and NodeJS frameworks.
   </p>
 );
 
@@ -55,7 +57,10 @@ function About() {
             {/* <ThirdParagraph /> */}
           </div>
           <div>
-            <img src={UCSBBirdEyesView.src} className="max-h-[440px] mb-[10px]"/>
+            <img
+              src={UCSBBirdEyesView.src}
+              className="max-h-[440px] mb-[10px]"
+            />
             <PhotoCaption />
           </div>
         </div>

@@ -14,7 +14,7 @@ function ExperienceCard({
   location,
   time,
   text,
-}:{
+}: {
   type: string;
   title: string;
   company: string;
@@ -45,7 +45,9 @@ function ExperienceCard({
 
   return (
     <div
-      className={`w-full max-w-[900px] overflow-hidden mb-[20px] border-[1px] rounded-md border-gray-100 shadow-md ${link ? "hover:cursor-pointer" : ""}`}
+      className={`w-full max-w-[900px] overflow-hidden mb-[20px] border-[1px] rounded-md border-gray-100 shadow-md ${
+        link ? "hover:cursor-pointer" : ""
+      }`}
       onMouseEnter={() => setIsMouseHover(true)}
       onMouseLeave={() => setIsMouseHover(false)}
       onClick={() => {
@@ -80,7 +82,13 @@ function ExperienceCard({
           copyToClipBoard(primaryColor);
         }}
       >
-        <p className={`${isMouseHover && primaryColor !== "black" ? "text-white" : "text-transparent"}`}>
+        <p
+          className={`${
+            isMouseHover && primaryColor !== "black"
+              ? "text-white"
+              : "text-transparent"
+          }`}
+        >
           company color: {primaryColor}
         </p>
       </div>
