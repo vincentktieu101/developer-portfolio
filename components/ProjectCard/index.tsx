@@ -26,13 +26,14 @@ function ProjectCard({
         </div>
         <div className="flex gap-[20px] mb-[10px] flex-col items-start md:flex-row">
           {images.map((image: any, i: number) => (
-            <picture key={i} className="max-h-[400px] hidden first:flex md:flex">
+            <div key={i} className="hidden first:flex md:flex">
               <img
+                className="max-h-[400px]"
                 key={i}
                 alt=""
                 src={image.src}
               />
-            </picture>
+            </div>
           ))}
         </div>
         <div className="mb-[20px]">
