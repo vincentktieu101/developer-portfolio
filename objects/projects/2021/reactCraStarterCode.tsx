@@ -22,7 +22,7 @@ const reactCraStarterCode: ProjectJson = {
     ReactCRAStarterCodeProfileImage4,
   ],
   description: (
-    <React.Fragment>
+    <>
       <p>
         In Spring of my junior year at UCSB, I became an tutor for CS148
         (Computer Science Project) in which students learn how to develop an
@@ -31,7 +31,7 @@ const reactCraStarterCode: ProjectJson = {
         how to use React/Google OAuth on YouTube as well as wrote a Github
         Readme.
       </p>
-    </React.Fragment>
+    </>
   ),
   iconsList: [
     "ReactJS",

@@ -14,13 +14,13 @@ const chatApp: ProjectJson = {
   date: "April 2021",
   images: [ChatAppImage1, ChatAppImage2],
   description: (
-    <React.Fragment>
+    <>
       <p>
-        Fullstack Chat Application using React, NodeJS, Express, SocketIO, and
-        Google OAuth! Because of SocketIO, the chat application updates for ALL
-        users on the socket without requiring manual refreshing.
+        Fullstack Chat Application using React, Express, SocketIO, and Google
+        OAuth! With SocketIO, the chat application updates for ALL users on the
+        socket without requiring manual refreshing.
       </p>
-    </React.Fragment>
+    </>
   ),
   iconsList: [
     "ReactJS",

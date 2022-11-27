@@ -8,8 +8,8 @@ function ExperienceCard({
   type,
   title,
   company,
-  primaryColor = "black",
-  secondaryColor = "black",
+  primaryColor = "#000000",
+  secondaryColor = "#ffffff",
   link,
   location,
   time,
@@ -40,22 +40,22 @@ function ExperienceCard({
 
   return (
     <div
-      className={`w-full max-w-[900px] overflow-hidden mb-[20px] border-[1px] rounded-md border-gray-100 shadow-md ${
-        link ? "hover:cursor-pointer" : ""
-      }`}
+      className="w-full max-w-[900px] overflow-hidden mb-[20px] border-[1px] rounded-md border-gray-100 shadow-md"
       onMouseEnter={() => setIsMouseHover(true)}
       onMouseLeave={() => setIsMouseHover(false)}
-      onClick={() => {
-        if (!link) return;
-        window.open(link, "_bank");
-      }}
     >
       <div className="flex">
         <div className="relative w-[80px]">
           <div className="absolute">
             <div
-              className="flex justify-center items-center w-[60px] h-[60px] rounded-br-md"
+              className={`flex justify-center items-center w-[60px] h-[60px] rounded-br-md ${
+                link ? "hover:cursor-pointer" : ""
+              }`}
               style={{ backgroundColor: primaryColor, color: secondaryColor }}
+              onClick={() => {
+                if (!link) return;
+                window.open(link, "_bank");
+              }}
             >
               <Icon fontSize="large" />
             </div>
@@ -78,14 +78,8 @@ function ExperienceCard({
           alert(`copied color: ${primaryColor}!`);
         }}
       >
-        <p
-          className={`${
-            isMouseHover && primaryColor !== "black"
-              ? "text-white"
-              : "text-transparent"
-          }`}
-        >
-          company color: {primaryColor}
+        <p className={`${isMouseHover ? "text-white" : "text-transparent"}`}>
+          company colors: {primaryColor}, {secondaryColor}
         </p>
       </div>
     </div>

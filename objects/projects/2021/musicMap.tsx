@@ -14,7 +14,7 @@ const musicMap: ProjectJson = {
   date: "March 2021",
   images: [MusicMapImage1, MusicMapImage2],
   description: (
-    <React.Fragment>
+    <>
       <p>
         MusicMap is my solution for organizing 5000+ music genres and 500,000+
         songs into a user friendly interface. The app features an
@@ -24,7 +24,7 @@ const musicMap: ProjectJson = {
         Spotify, go on genre shuffle mode, and skip to the next audio sample.
         MusicMap is developed for both desktop and mobile!
       </p>
-    </React.Fragment>
+    </>
   ),
   iconsList: ["ReactJS", "Netlify", "Github", "MaterialUI", "Javascript"],
 };

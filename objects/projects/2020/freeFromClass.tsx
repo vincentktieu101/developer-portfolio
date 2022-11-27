@@ -21,7 +21,7 @@ const freeFromClass: ProjectJson = {
     FreeFromClassImage4,
   ],
   description: (
-    <React.Fragment>
+    <>
       <p>
         FreeFromClass was a class project for CS48. This was my introduction
         into web development where I worked in a team of 4 to develop an app
@@ -31,12 +31,12 @@ const freeFromClass: ProjectJson = {
         this project!
       </p>
       <p>
-        FreeFromClass was meant to be a tool for students to find good times to
-        meet with others. Students could input their schedule then create
-        multiple groups in order to find good times to meet in each group.
-        When2Meet is a similar app minus the ability to reuse schedules.
+        FreeFromClass is a tool for students to find good times to meet with
+        others. Students could input their schedule then create multiple groups
+        in order to find good times to meet in each group. When2Meet is a
+        similar app minus the ability to reuse schedules.
       </p>
-    </React.Fragment>
+    </>
   ),
   iconsList: [
     "ReactJS",

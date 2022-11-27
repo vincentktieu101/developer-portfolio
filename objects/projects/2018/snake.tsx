@@ -17,7 +17,7 @@ const snake: ProjectJson = {
   date: "December 2018",
   images: [SnakeImage1, SnakeImage2],
   description: (
-    <React.Fragment>
+    <>
       <p>
         I developed this project while I was still an Electrical Engineering
         major. This project has a special place in my heart because it helped me
@@ -28,14 +28,13 @@ const snake: ProjectJson = {
       </p>
       <p>
         I wrote this app in Python and Pygame. I also wrote a mini programming
-        guide that you can check out
+        guide that you can check out {" "}
         <ExternalLink href="https://docs.google.com/document/d/1OEufgKplRawOo76_liC3QqEdKu9eFTG4x-0CQsaFhbw/edit?usp=sharing">
-          {" "}
           here
         </ExternalLink>
         . I even designed an 8-bit music theme for the game!
       </p>
-    </React.Fragment>
+    </>
   ),
   iconsList: ["Pygame", "Python"],
 };

@@ -15,7 +15,7 @@ const touchOfElegance: ProjectJson = {
   date: "March 2021 - Present",
   images: [TouchOfElegance1, TouchOfElegance2, TouchOfElegance3],
   description: (
-    <React.Fragment>
+    <>
       <p>
         This was my first time doing freelance work and I wrote the website from
         scratch in React GatsbyJS. The previous website that my aunt had for her
@@ -23,7 +23,7 @@ const touchOfElegance: ProjectJson = {
         website includes some photos, a contact form (using EmailJS), and a menu
         that can be reached through a QR code.
       </p>
-    </React.Fragment>
+    </>
   ),
   iconsList: ["ReactJS", "GatsbyJS", "Netlify", "MaterialUI", "Javascript"],
 };

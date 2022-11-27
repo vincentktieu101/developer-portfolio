@@ -14,15 +14,16 @@ const lineTrackingCar: ProjectJson = {
   date: "January 2019 - March 2019",
   images: [LineTrackingCarImage1, LineTrackingCarImage2],
   description: (
-    <React.Fragment>
+    <>
       <p>
         The Line Tracking Car was a project from a ECE project class that I
-        took. The project required me to learn breadboarding as well as tweak
-        the linear regression algorithm to get the car to turn accordingly.
+        took. The project required me to learn breadboarding as well as learn C
+        and Python. One of the hardest jobs involved tweaking the linear
+        regression algorithm to get the car to turn accordingly.
       </p>
-    </React.Fragment>
+    </>
   ),
-  iconsList: ["OpenCV", "Arduino", "Python", "Cpp"],
+  iconsList: ["OpenCV", "Arduino", "Python", "C++"],
 };
 
 export default lineTrackingCar;

@@ -7,10 +7,10 @@ const UcsbUndergraduateLearningAssistant2 = {
   link: "https://www.cs.ucsb.edu/",
   location: "Santa Barbara CA",
   time: "September 2021 - December 2021",
-  text: `Worked as an undergraduate teaching assistant for CS148,
-Computer Science Project, where students build an app while learn about Agile, 
+  text: `Undergraduate teaching assistant for CS148:
+Computer Science Project, where students build an app while learning about Agile, 
 testing, and software reliability. This quarter I helped mentor 3.5 teams
-that used React, NoSQL, Flask / Express, Git, and Heroku for their apps.`,
+and provided technical guidance with React, NoSQL, Flask, Express, Git, and Heroku.`,
 };
 
 export default UcsbUndergraduateLearningAssistant2;
