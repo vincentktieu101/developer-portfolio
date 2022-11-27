@@ -12,11 +12,12 @@ interface ExperienceJson {
   type: string;
   title: string;
   company: string;
+  link?: string;
+  primaryColor?: string;
+  secondaryColor?: string;
   location: string;
   time: string;
   text: string;
-  primaryColor?: string;
-  secondaryColor?: string;
 }
 
 const experienceArray: ExperienceJson[] = [

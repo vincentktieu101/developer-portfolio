@@ -1,13 +1,12 @@
 import React from "react";
 
 import Link from "next/link";
-
 import Container from "@mui/material/Container";
 import Section from "@components/Section";
+import SectionHeader from "@components/Section/SectionHeader";
 
 import UCSBBirdEyesView from "@images/backgrounds/ucsb-birdseyeview.jpg";
 import resumeLink from "@objects/resume-link";
-import SectionHeader from "@components/Section/SectionHeader";
 
 const FirstParagraph = () => (
   <p className="leading-2 mb-[20px]">
@@ -53,7 +52,7 @@ function About() {
             <SectionHeader underlined>About Me</SectionHeader>
             <FirstParagraph />
             <SecondParagraph />
-            <ThirdParagraph />
+            {/* <ThirdParagraph /> */}
           </div>
           <div>
             <img src={UCSBBirdEyesView.src} className="max-h-[440px] mb-[10px]"/>

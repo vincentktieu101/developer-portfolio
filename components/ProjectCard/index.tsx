@@ -38,7 +38,10 @@ function ProjectCard({
         </div>
         <div className="mb-[20px]">
           {iconsList.map((icon: string, i: number) => (
-            <span key={i}>{icon}. </span>
+            <span key={i}>
+              {icon}
+              {i != (iconsList.length - 1) && " | "}
+            </span>
           ))}
         </div>
         <div className="max-w-[800px] leading-2 flex flex-col gap-[20px]">
