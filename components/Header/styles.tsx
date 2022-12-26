@@ -46,7 +46,9 @@ const StyledHeader = styled.header`
         `
       : css`
           background-color: rgba(236, 236, 236, 0.2);
-        `} /* a {
+        `} 
+        
+  /* a {
     color: black;
     text-decoration: none;
     display: inline-block;

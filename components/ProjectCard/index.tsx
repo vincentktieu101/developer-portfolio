@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 import ExternalLink from "@components/Link/ExternalLink";
 import LaunchIcon from "@mui/icons-material/Launch";
@@ -23,31 +23,31 @@ function ProjectCard({
           <EventIcon fontSize="small" />
           {date}
         </p>
-        <p className="flex flex-wrap items-center mb-[10px] gap-[10px]">
+        <div className="flex flex-wrap items-center mb-[10px] gap-[10px]">
           <LaunchIcon fontSize="small" />
           {Object.keys(links).map((link: string, i: number) => (
-            <>
-              <ExternalLink href={links[link]} key={i}>
+            <Fragment key={i}>
+              <ExternalLink href={links[link]}>
                 {link}
               </ExternalLink>
               {i != Object.keys(links).length - 1 && <span>|</span>}
-            </>
+            </Fragment>
           ))}
-        </p>
+        </div>
         <div className="flex gap-[20px] flex-col items-start md:flex-row mb-[10px]">
           {images.map((image: any, i: number) => (
             <div key={i} className="hidden first:flex md:flex">
-              <img className="max-h-[400px]" key={i} alt="" src={image.src} />
+              <img className="max-h-[400px]" alt="" src={image.src} />
             </div>
           ))}
         </div>
         <div className="flex flex-wrap items-center gap-x-[10px] mb-[20px]">
           <SourceIcon fontSize="small" />
           {iconsList.map((icon: string, i: number) => (
-            <>
-              <span key={i}>{icon}</span>
+            <Fragment key={i}>
+              <span>{icon}</span>
               {i != iconsList.length - 1 && <span>|</span>}
-            </>
+            </Fragment>
           ))}
         </div>
         <div className="max-w-[800px] leading-2 flex flex-col gap-[20px]">

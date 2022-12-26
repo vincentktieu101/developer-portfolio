@@ -10,13 +10,13 @@ function Footer() {
         <p>
           Built with
           {` `}
-          <ExternalLink href="https://nextjs.org/">
+          <ExternalLink href="https://nextjs.org/" noStyles>
             <b>NextJS</b>
           </ExternalLink>
           . Check source code{" "}
           <ExternalLink
-            // TODO: update link
-            href="https://github.com/vincentktieu101/DeveloperPortfolio"
+            href="https://github.com/vincentktieu101/developer-portfolio"
+            noStyles
           >
             <b>here</b>
           </ExternalLink>

@@ -54,7 +54,7 @@ function Header() {
             <div className="hidden lg:flex items-center gap-[20px]">
               {sections.map(({ name, path }, i) => (
                 <Link key={i} href={path}>
-                  <a className="font-['Roboto Mono'] text-[18px] capitalize text-black/[0.75]">
+                  <a className="font-['Roboto Mono'] text-[18px] capitalize text-black/[0.75] duration-200 hover:text-black">
                     {name}
                   </a>
                 </Link>
