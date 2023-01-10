@@ -4,7 +4,7 @@ import VincentHeadshot from "@images/main/vincent-headshot.png";
 
 export default function Cover() {
   return (
-    <div className="relative w-full h-[75vh] mb-[15vh] sm:h-[90vh]">
+    <div className="relative w-full h-[80vh] mb-[15vh] sm:h-[90vh]">
       <div className="absolute w-full h-full bg-[url('/lightbulbs.jpeg')] bg-left bg-cover z-[-1]" />
       <div className="flex justify-center w-full">
         <img
