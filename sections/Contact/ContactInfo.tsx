@@ -24,7 +24,7 @@ function ContactInfo() {
             Rosemead, Los Angeles
           </ExternalLink>
         </div>
-        <div className="flex items-center mb-[10px]">
+        {/* <div className="flex items-center mb-[10px]">
           <ExternalLink
             href="https://www.google.com/search?q=6265375590&source=hp&ei=LttzYIS5Icvb-gSCrYiYCA&iflsig=AINFCbYAAAAAYHPpPhPl2um35fphoMiN7ljN2XEbmanf&oq=6265375590&gs_lcp=Cgdnd3Mtd2l6EAM6AggAOg4ILhCxAxCDARDHARCjAjoICAAQsQMQgwE6CAguELEDEIMBOgUIABCxAzoFCC4QsQM6CwguELEDEIMBEJMCOg4ILhCxAxCDARDHARCvAToICC4QxwEQrwE6BAgAEB46BwgAEMkDEB46BggAEAUQHlD8BlioJWCnJ2gCcAB4AIABdYgBqQmSAQM2LjaYAQCgAQGqAQdnd3Mtd2l6sAEA&sclient=gws-wiz&ved=0ahUKEwiEiMyZ_ffvAhXLrZ4KHYIWAoMQ4dUDCAg&uact=5"
             noStyles
@@ -32,7 +32,7 @@ function ContactInfo() {
             <PhoneIcon fontSize="large" className="mr-[10px]" />
             (626) 537-5590
           </ExternalLink>
-        </div>
+        </div> */}
         <div className="flex items-center mb-[10px]">
           <ExternalLink
             href="mailto:vincentktieu101@gmail.com"
@@ -48,7 +48,7 @@ function ContactInfo() {
             noStyles
           >
             <GitHubIcon fontSize="large" className="mr-[10px]" />
-            https://github.com/vincentktieu101
+            github.com/vincentktieu101
           </ExternalLink>
         </div>
         <div className="flex items-center mb-[10px]">
@@ -57,11 +57,14 @@ function ContactInfo() {
             noStyles
           >
             <LinkedInIcon fontSize="large" className="mr-[10px]" />
-            https://www.linkedin.com/in/vincentktieu
+            linkedin.com/in/vincentktieu
           </ExternalLink>
         </div>
         <div className="flex items-center mb-[10px]">
-          <ExternalLink noStyles>
+          <ExternalLink
+            onClick={() => alert('resume disabled sorry :^)')}
+            noStyles
+          >
             <PostAddIcon fontSize="large" className="mr-[10px]" />
             Resume
           </ExternalLink>

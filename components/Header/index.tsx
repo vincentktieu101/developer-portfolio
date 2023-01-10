@@ -31,15 +31,15 @@ function Header() {
             <Link href="/">
               <a>
                 {navShrink ? (
-                  <h1 className="flex text-[20px] gap-[10px]">
+                  <h1 className="flex flex-col text-[20px] gap-[2px] sm:flex-row sm:gap-[10px]">
                     <p className="font-['SilkScreen']">Vincent Tieu</p>
-                    <p>|</p>
+                    <p className="hidden sm:inline-block">|</p>
                     <p className="font-['Roboto Mono']">Software Engineer</p>
                   </h1>
                 ) : (
                   <>
                     <h1 className="flex flex-col items-center">
-                      <p className="font-['SilkScreen'] text-[45px] font-[700]">
+                      <p className="font-['SilkScreen'] text-[32px] font-[700] md:text-[45px]">
                         Vincent Tieu
                       </p>
                       <p className="font-['Roboto Mono'] text-[20px] font-[300] mt-[-10px]">

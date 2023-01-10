@@ -1,21 +1,6 @@
 import React from "react";
 
 import VincentHeadshot from "@images/main/vincent-headshot.png";
-import Link from "next/link";
-import Image from "next/image";
-import ExternalLink from "@components/Link/ExternalLink";
-
-import resumeLink from "@objects/resume-link";
-
-import {
-  CoverHeroImage,
-  CoverText,
-  CoverBody,
-  CoverButtons,
-  CoverButton,
-  CoverAnimatedTitle,
-  CoverAnimatedLine,
-} from "./styles";
 
 export default function Cover() {
   return (
