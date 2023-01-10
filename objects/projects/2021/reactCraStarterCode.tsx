@@ -8,7 +8,7 @@ import ReactCRAStarterCodeProfileImage4 from "@images/projects/2021/react-cra-st
 import ProjectJson from "../ProjectJson";
 
 const reactCraStarterCode: ProjectJson = {
-  title: "ReactGoogleAuthStarter",
+  title: "ReactGoogleStarter",
   links: {
     Website: "https://react-google-auth-starter.herokuapp.com/",
     Github: "https://github.com/vincentktieu101/ReactGoogleAuthStarter",
